@@ -1,0 +1,19 @@
+extends:
+  - standard
+env:
+  node: true
+  mocha: true
+  browser: true
+  es6: true
+globals:
+  document: false
+  escape: false
+  navigator: false
+  unescape: false
+  window: false
+  describe: true
+  before: true
+  it: true
+  expect: true
+  sinon: true
+parser: "babel-eslint"

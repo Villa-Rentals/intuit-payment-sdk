@@ -1,0 +1,44 @@
+{
+  "name": "intuitPaymentSDK",
+  "version": "1.0.0",
+  "description": "Unofficial SDK to access the Intuit Payment API",
+  "main": "lib/intuit-payment-sdk.js",
+  "scripts": {
+    "build": "NODE_ENV=build webpack --env dev && webpack --env build && npm run test",
+    "dev": "NODE_ENV=dev webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js",
+    "lint": "./node_modules/.bin/eslint . --fix",
+    "prepush": "npm run lint"
+  },
+  "author": "Villa Rentals, Inc.",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "jquery": "^3.3.1",
+    "jsdom": "^11.6.2",
+    "mocha": "^4.0.1",
+    "popper.js": "^1.14.1",
+    "webpack": "^3.10.0",
+    "yargs": "^10.0.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "dotenv": "^5.0.1"
+  }
+}
