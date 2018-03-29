@@ -5,6 +5,7 @@ import Intuit from '../../lib/intuitPaymentSDK.js'
 
 describe('Given an instance of BankAccount', () => {
   let lib
+  let bankID
 
   before(() => {
     lib = new Intuit({
@@ -20,9 +21,20 @@ describe('Given an instance of BankAccount', () => {
       accountNumber: '11000000333456781',
       accountType: 'PERSONAL_CHECKING',
       phone: '6047296480'
-    }, 'customerID', 'requestID')
+    }, 'customerID')
       .then(({data}) => {
+        bankID = data.id
         assert.equal(data.name, 'My Checking')
+      })
+      .catch((error) => {
+        assert.isNull(error, 'Error should be null')
+      })
+  })
+
+  it('delete a bank account', () => {
+    return lib.remove(bankID, 'customerID')
+      .then(() => {
+        assert.isTrue(true)
       })
       .catch((error) => {
         assert.isNull(error, 'Error should be null')
