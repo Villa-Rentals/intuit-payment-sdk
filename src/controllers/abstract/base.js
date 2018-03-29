@@ -38,6 +38,10 @@ export default class Base {
     throw new NotImplementedError()
   }
 
+  createFromToken (info) {
+    throw new NotImplementedError()
+  }
+
   get (id) {
     throw new NotImplementedError()
   }
