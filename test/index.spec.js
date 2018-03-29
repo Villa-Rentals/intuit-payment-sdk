@@ -1,19 +1,44 @@
 'use strict'
 
-import chai from 'chai'
-
+import { assert } from 'chai'
 import Intuit from '../lib/intuitPaymentSDK.js'
-
-chai.expect()
-
-const expect = chai.expect
 
 describe('Given an instance of Library', () => {
   let lib
 
   before(() => {
     lib = new Intuit({
-      baseURL: 'sandbox.api.intuit.com'
+      production: false,
+      version: 'v4'
     })
+  })
+
+  it('constructor works', () => {
+    assert.equal(lib.production, false)
+    assert.equal(lib.version, 'v4')
+  })
+
+  it('returns the BankAccount object', () => {
+    let bank = lib.BankAccount('some token')
+
+    assert.equal(bank.production, false)
+    assert.equal(bank.version, 'v4')
+    assert.equal(bank.accessToken, 'some token')
+  })
+
+  it('returns the ECheck object', () => {
+    let check = lib.ECheck('some token')
+
+    assert.equal(check.production, false)
+    assert.equal(check.version, 'v4')
+    assert.equal(check.accessToken, 'some token')
+  })
+
+  it('returns the CreditCard object', () => {
+    let card = lib.CreditCard('some token')
+
+    assert.equal(card.production, false)
+    assert.equal(card.version, 'v4')
+    assert.equal(card.accessToken, 'some token')
   })
 })

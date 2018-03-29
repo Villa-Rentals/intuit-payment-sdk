@@ -5,7 +5,7 @@ import NotImplementedError from '../../errors/notImplementedError'
 
 export default class Base {
   constructor (args) {
-    this.accessToken = null
+    this.accessToken = args.accessToken
     this.production = args.production
     this.version = args.version
   }

@@ -2,6 +2,6 @@
 
 import Base from './abstract/base'
 
-export default class eCheck extends Base {
+export default class ECheck extends Base {
 
 }
