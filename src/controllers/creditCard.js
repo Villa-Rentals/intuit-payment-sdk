@@ -101,4 +101,27 @@ export default class CreditCard extends Base {
   remove (cardID, customerID, requestID) {
     return this.request('DELETE', `/customers/${customerID}/cards/${cardID}`, {}, requestID)
   }
+
+  /**
+   * `CreditCard` `get` method.
+   *
+   * Retrieve a credit card through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `cardID`           identifier of the card
+   *   - `customerID`       identifier for the customer
+   *
+   * Examples:
+   *
+   *     CreditCard().get('identifier', 'customer-id');
+   *
+   * @method
+   * @param {object} cardID
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  get (cardID, customerID) {
+    return this.request('GET', `/customers/${customerID}/cards/${cardID}`, {})
+  }
 }
