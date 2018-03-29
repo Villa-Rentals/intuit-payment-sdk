@@ -124,4 +124,25 @@ export default class CreditCard extends Base {
   get (cardID, customerID) {
     return this.request('GET', `/customers/${customerID}/cards/${cardID}`, {})
   }
+
+  /**
+   * `CreditCard` `all` method.
+   *
+   * Retrieve all credit cards through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `customerID`       identifier for the customer
+   *
+   * Examples:
+   *
+   *     CreditCard().all('customer-id');
+   *
+   * @method
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  all (customerID) {
+    return this.request('GET', `/customers/${customerID}/cards`, {})
+  }
 }
