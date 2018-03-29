@@ -12,6 +12,8 @@ describe('Given an instance of Library', () => {
   let lib
 
   before(() => {
-    lib = new Intuit()
+    lib = new Intuit({
+      baseURL: 'sandbox.api.intuit.com'
+    })
   })
 })
