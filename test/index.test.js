@@ -26,14 +26,6 @@ describe('Given an instance of Library', () => {
     assert.equal(bank.accessToken, 'some token')
   })
 
-  it('returns the ECheck object', () => {
-    let check = lib.ECheck('some token')
-
-    assert.equal(check.production, false)
-    assert.equal(check.version, 'v4')
-    assert.equal(check.accessToken, 'some token')
-  })
-
   it('returns the CreditCard object', () => {
     let card = lib.CreditCard('some token')
 
