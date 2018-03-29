@@ -42,7 +42,7 @@ export default class Base {
     throw new NotImplementedError()
   }
 
-  refund (id) {
+  remove (id) {
     throw new NotImplementedError()
   }
 

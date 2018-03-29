@@ -55,7 +55,7 @@ export default class BankAccount extends Base {
    *        'some-token',
    *        'customer-id',
    *        'request-id'
-   *     });
+   *     );
    *
    * @method
    * @param {string} token
@@ -68,5 +68,34 @@ export default class BankAccount extends Base {
     return this.request('POST', `/customers/${customerID}/bank-accounts/createFromToken`, {
       value: token
     }, requestID)
+  }
+
+  /**
+   * `BankAccount` `remove` method.
+   *
+   * Remove a bank account through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `bankID`       tokenized version of the bank account
+   *   - `customerID`  identifier for the customer
+   *   - `requestID`   identifier for the network request tracking
+   *
+   * Examples:
+   *
+   *     BankAccount().remove(
+   *        'some-identifier',
+   *        'customer-id',
+   *        'request-id'
+   *     );
+   *
+   * @method
+   * @param {string} bankID
+   * @param {string} customerID
+   * @param {string} requestID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  remove (bankID, customerID, requestID) {
+    return this.request('DELETE', `/customers/${customerID}/bank-accounts/${bankID}`, {}, requestID)
   }
 }
