@@ -9,19 +9,21 @@ export default class Intuit {
     this.production = args.production
   }
 
-  BankAccount (accessToken) {
+  BankAccount (accessToken, realmID) {
     return new BankAccount({
       version: this.version,
       production: this.production,
-      accessToken: accessToken
+      accessToken: accessToken,
+      realmID: realmID
     })
   }
 
-  CreditCard (accessToken) {
+  CreditCard (accessToken, realmID) {
     return new CreditCard({
       version: this.version,
       production: this.production,
-      accessToken: accessToken
+      accessToken: accessToken,
+      realmID: realmID
     })
   }
 }

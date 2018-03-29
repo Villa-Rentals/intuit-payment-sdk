@@ -1,11 +1,13 @@
 'use strict'
 
 import axios from 'axios'
+import { v1 as uuidv1 } from 'uuid'
 import NotImplementedError from '../../errors/notImplementedError'
 
 export default class Base {
   constructor (args) {
     this.accessToken = args.accessToken
+    this.realmID = args.realmID
     this.production = args.production
     this.version = args.version
   }
@@ -15,16 +17,15 @@ export default class Base {
     if (this.production) {
       domain = 'api.intuit.com'
     }
-    return `https://${domain}${this.path}/quickbooks/${this.version}/${path}`
+    return `https://${domain}/quickbooks/${this.version}${path}`
   }
 
-  request (method, path, params = {}, requestID) {
+  request (method, path, params = {}) {
     let headers = {
       'Authorization': `Bearer ${this.accessToken}`,
-      'Content-Type': 'application/json'
-    }
-    if (requestID) {
-      headers['Request-Id'] = requestID
+      'Content-Type': 'application/json',
+      'Company-Id': this.realmID,
+      'Request-Id': uuidv1()
     }
     return axios({
       method: method,

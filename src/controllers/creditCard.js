@@ -21,7 +21,6 @@ export default class CreditCard extends Base {
    *       - `country`        country of billing address
    *       - `postalCode`     postalCode of billing address
    *   - `customerID`       identifier for the customer
-   *   - `requestID`        identifier for the network request tracking
    *
    * Examples:
    *
@@ -37,17 +36,16 @@ export default class CreditCard extends Base {
    *         "country": "US",
    *         "postalCode": "44112"
    *       }
-   *     }, 'customer-id', 'request-id');
+   *     }, 'customer-id');
    *
    * @method
    * @param {object} card
    * @param {string} customerID
-   * @param {string} requestID
    * @access public
    * @return {Promise} promise containing network response object
    */
-  create (card, customerID, requestID) {
-    return this.request('POST', `/customers/${customerID}/cards`, card, requestID)
+  create (card, customerID) {
+    return this.request('POST', `/customers/${customerID}/cards`, card)
   }
 
   /**
@@ -58,23 +56,21 @@ export default class CreditCard extends Base {
    * Required Options:
    *   - `token`            tokenized version of the card
    *   - `customerID`       identifier for the customer
-   *   - `requestID`        identifier for the network request tracking
    *
    * Examples:
    *
-   *     CreditCard().createFromToken('some-token', 'customer-id', 'request-id');
+   *     CreditCard().createFromToken('some-token', 'customer-id');
    *
    * @method
    * @param {object} token
    * @param {string} customerID
-   * @param {string} requestID
    * @access public
    * @return {Promise} promise containing network response object
    */
-  createFromToken (token, customerID, requestID) {
+  createFromToken (token, customerID) {
     return this.request('POST', `/customers/${customerID}/cards`, {
       value: token
-    }, requestID)
+    })
   }
 
   /**
@@ -85,21 +81,19 @@ export default class CreditCard extends Base {
    * Required Options:
    *   - `cardID`           identifier of the card
    *   - `customerID`       identifier for the customer
-   *   - `requestID`        identifier for the network request tracking
    *
    * Examples:
    *
-   *     CreditCard().remove('identifier', 'customer-id', 'request-id');
+   *     CreditCard().remove('identifier', 'customer-id');
    *
    * @method
    * @param {object} cardID
    * @param {string} customerID
-   * @param {string} requestID
    * @access public
    * @return {Promise} promise containing network response object
    */
-  remove (cardID, customerID, requestID) {
-    return this.request('DELETE', `/customers/${customerID}/cards/${cardID}`, {}, requestID)
+  remove (cardID, customerID) {
+    return this.request('DELETE', `/customers/${customerID}/cards/${cardID}`, {})
   }
 
   /**

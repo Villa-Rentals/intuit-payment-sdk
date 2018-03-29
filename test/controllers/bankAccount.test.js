@@ -10,10 +10,22 @@ describe('Given an instance of BankAccount', () => {
     lib = new Intuit({
       production: false,
       version: 'v4'
-    }).BankAccount('some-token')
+    }).BankAccount(process.env.ACCESS_TOKEN, process.env.REALM_ID)
   })
 
-  describe('creating a charge', () => {
-
+  it('add a bank account', () => {
+    return lib.create({
+      name: 'My Checking',
+      routingNumber: '322079353',
+      accountNumber: '11000000333456781',
+      accountType: 'PERSONAL_CHECKING',
+      phone: '6047296480'
+    }, 'customerID', 'requestID')
+      .then(({data}) => {
+        assert.equal(data.name, 'My Checking')
+      })
+      .catch((error) => {
+        assert.isNull(error, 'Error should be null')
+      })
   })
 })

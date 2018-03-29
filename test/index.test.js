@@ -20,18 +20,20 @@ describe('Given an instance of Library', () => {
   })
 
   it('returns the BankAccount object', () => {
-    let bank = lib.BankAccount('some token')
+    let bank = lib.BankAccount('some token', 'some realmID')
 
     assert.equal(bank.production, false)
     assert.equal(bank.version, 'v4')
     assert.equal(bank.accessToken, 'some token')
+    assert.equal(bank.realmID, 'some realmID')
   })
 
   it('returns the CreditCard object', () => {
-    let card = lib.CreditCard('some token')
+    let card = lib.CreditCard('some token', 'some realmID')
 
     assert.equal(card.production, false)
     assert.equal(card.version, 'v4')
     assert.equal(card.accessToken, 'some token')
+    assert.equal(card.realmID, 'some realmID')
   })
 })

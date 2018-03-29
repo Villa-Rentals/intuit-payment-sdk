@@ -24,6 +24,7 @@ if (process.env.ENV === 'build') {
 }
 
 const config = {
+  target: 'node',
   entry: path.join(__dirname, '/src/index.js'),
   devtool: 'source-map',
   output: {
