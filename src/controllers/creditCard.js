@@ -62,7 +62,7 @@ export default class CreditCard extends Base {
    *
    * Examples:
    *
-   *     CreditCard().create('some-token', 'customer-id', 'request-id');
+   *     CreditCard().createFromToken('some-token', 'customer-id', 'request-id');
    *
    * @method
    * @param {object} token
@@ -75,5 +75,30 @@ export default class CreditCard extends Base {
     return this.request('POST', `/customers/${customerID}/cards`, {
       value: token
     }, requestID)
+  }
+
+  /**
+   * `CreditCard` `remove` method.
+   *
+   * Remove a credit card through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `cardID`           identifier of the card
+   *   - `customerID`       identifier for the customer
+   *   - `requestID`        identifier for the network request tracking
+   *
+   * Examples:
+   *
+   *     CreditCard().remove('identifier', 'customer-id', 'request-id');
+   *
+   * @method
+   * @param {object} cardID
+   * @param {string} customerID
+   * @param {string} requestID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  remove (cardID, customerID, requestID) {
+    return this.request('DELETE', `/customers/${customerID}/cards/${cardID}`, {}, requestID)
   }
 }
