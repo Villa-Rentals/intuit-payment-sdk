@@ -124,4 +124,27 @@ export default class BankAccount extends Base {
   get (bankID, customerID) {
     return this.request('GET', `/customers/${customerID}/bank-accounts/${bankID}`, {})
   }
+
+  /**
+   * `BankAccount` `all` method.
+   *
+   * Retrieve all bank accounts for a customer through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `customerID`  identifier for the customer
+   *
+   * Examples:
+   *
+   *     BankAccount().all(
+   *        'customer-id'
+   *     );
+   *
+   * @method
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  all (customerID) {
+    return this.request('GET', `/customers/${customerID}/bank-accounts`, {})
+  }
 }
