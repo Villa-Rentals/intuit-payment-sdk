@@ -31,6 +31,27 @@ describe('Given an instance of BankAccount', () => {
       })
   })
 
+  it('get a bank account', () => {
+    return lib.get(bankID, 'customerID')
+      .then(({data}) => {
+        assert.equal(data.id, bankID)
+      })
+      .catch((error) => {
+        assert.isNull(error, 'Error should be null')
+      })
+  })
+
+  it('get all bank accounts', () => {
+    return lib.all('customerID')
+      .then(({data}) => {
+        assert.isArray(data, 'Response is array')
+        assert.equal(data[0].id, bankID)
+      })
+      .catch((error) => {
+        assert.isNull(error, 'Error should be null')
+      })
+  })
+
   it('delete a bank account', () => {
     return lib.remove(bankID, 'customerID')
       .then(() => {
