@@ -2,6 +2,7 @@
 
 import { assert } from 'chai'
 import Intuit from '../lib/intuitPaymentSDK.js'
+import '../env'
 
 describe('Given an instance of Library', () => {
   let lib
