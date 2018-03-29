@@ -6,8 +6,8 @@
   "scripts": {
     "build": "NODE_ENV=build webpack --env dev && webpack --env build && npm run test",
     "dev": "NODE_ENV=dev webpack --progress --colors --watch --env dev",
-    "test": "mocha --require babel-core/register --colors ./test/*.spec.js",
-    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js",
+    "test": "mocha --require babel-core/register --colors ./test/*.test.js",
+    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.test.js",
     "lint": "./node_modules/.bin/eslint . --fix",
     "prepush": "npm run lint"
   },
