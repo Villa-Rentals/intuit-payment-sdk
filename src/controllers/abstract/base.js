@@ -18,15 +18,19 @@ export default class Base {
     return `https://${domain}${this.path}/quickbooks/${this.version}/${path}`
   }
 
-  request (path, method, params) {
-    axios({
+  request (method, path, params = {}, requestID) {
+    let headers = {
+      'Authorization': `Bearer ${this.accessToken}`,
+      'Content-Type': 'application/json'
+    }
+    if (requestID) {
+      headers['Request-Id'] = requestID
+    }
+    return axios({
       method: method,
       url: this.formatUrl(path),
       data: params,
-      headers: {
-        'Authorization': `Bearer ${this.accessToken}`,
-        'Content-Type': 'application/json'
-      }
+      headers: headers
     })
   }
 
