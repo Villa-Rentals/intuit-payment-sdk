@@ -42,6 +42,10 @@ export default class Base {
     throw new NotImplementedError()
   }
 
+  all () {
+    throw new NotImplementedError()
+  }
+
   remove (id) {
     throw new NotImplementedError()
   }

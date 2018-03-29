@@ -98,4 +98,30 @@ export default class BankAccount extends Base {
   remove (bankID, customerID, requestID) {
     return this.request('DELETE', `/customers/${customerID}/bank-accounts/${bankID}`, {}, requestID)
   }
+
+  /**
+   * `BankAccount` `get` method.
+   *
+   * Retrieve a bank account's information through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `bankID`       tokenized version of the bank account
+   *   - `customerID`  identifier for the customer
+   *
+   * Examples:
+   *
+   *     BankAccount().remove(
+   *        'some-identifier',
+   *        'customer-id'
+   *     );
+   *
+   * @method
+   * @param {string} bankID
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  get (bankID, customerID) {
+    return this.request('GET', `/customers/${customerID}/bank-accounts/${bankID}`, {})
+  }
 }
