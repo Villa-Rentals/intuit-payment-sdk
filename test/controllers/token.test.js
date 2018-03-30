@@ -16,21 +16,21 @@ describe('Given an instance of Token', () => {
   it('create token from credit card', () => {
     return lib.create({
       card: {
-        'number': '6011111111111117',
-        'expMonth': '12',
-        'expYear': '2026',
-        'name': 'Test User',
-        'address': {
-          'streetAddress': '1245 Hana Rd',
-          'city': 'Richmond',
-          'region': 'VA',
-          'country': 'US',
-          'postalCode': '44112'
+        number: '6011111111111117',
+        expMonth: '12',
+        expYear: '2026',
+        name: 'Test User',
+        address: {
+          streetAddress: '1245 Hana Rd',
+          city: 'Richmond',
+          region: 'VA',
+          country: 'US',
+          postalCode: '44112'
         }
       }
     })
-      .then(() => {
-        assert.isTrue(true)
+      .then(({data}) => {
+        assert.isNotNull(data.value)
       })
       .catch((error) => {
         assert.isNull(error, 'Error should be null')
@@ -47,8 +47,8 @@ describe('Given an instance of Token', () => {
         phone: '6047296480'
       }
     })
-      .then(() => {
-        assert.isTrue(true)
+      .then(({data}) => {
+        assert.isNotNull(data.value)
       })
       .catch((error) => {
         assert.isNull(error, 'Error should be null')

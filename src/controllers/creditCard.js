@@ -139,4 +139,62 @@ export default class CreditCard extends Base {
   all (customerID) {
     return this.request('GET', `/customers/${customerID}/cards`, {})
   }
+
+  /**
+   * `CreditCard` `chargeByToken` method.
+   *
+   * Charge a credit card through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `token`       tokenized version of the card
+   *   - `amount`      the amount to charge the card
+   *   - `currency`    the amount to charge will be in (default `USD`)
+   *
+   * Examples:
+   *
+   *     CreditCard().chargeByToken('some-token', 10.55);
+   *
+   * @method
+   * @param {string} token
+   * @param {number} amount
+   * @param {string} currency
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  chargeByToken (token, amount, currency = 'USD') {
+    return this.request('POST', `/payments/charges`, {
+      amount: String(amount),
+      token: token,
+      currency: currency
+    })
+  }
+
+  /**
+   * `CreditCard` `chargeByID` method.
+   *
+   * Charge a credit card through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `cardID`      identifier of the card
+   *   - `amount`      the amount to charge the card
+   *   - `currency`    the amount to charge will be in (default `USD`)
+   *
+   * Examples:
+   *
+   *     CreditCard().chargeByID('some-id', 10.55);
+   *
+   * @method
+   * @param {string} cardID
+   * @param {number} amount
+   * @param {string} currency
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  chargeByID (cardID, amount, currency = 'USD') {
+    return this.request('POST', `/payments/charges`, {
+      amount: String(amount),
+      cardOnFile: cardID,
+      currency: currency
+    })
+  }
 }
