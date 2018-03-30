@@ -197,4 +197,105 @@ export default class CreditCard extends Base {
       currency: currency
     })
   }
+
+  /**
+   * `CreditCard` `receipt` method.
+   *
+   * Retrieve a charge through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `chargeID`      identifier of the charge
+   *
+   * Examples:
+   *
+   *     CreditCard().receipt('some-id');
+   *
+   * @method
+   * @param {string} chargeID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  receipt (chargeID) {
+    return this.request('GET', `/payments/charges/${chargeID}`, {})
+  }
+
+  /**
+   * `CreditCard` `capture` method.
+   *
+   * Capture an existing charge through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `chargeID`      identifier of the charge
+   *   - `amount`        amount to capture
+   *
+   * Examples:
+   *
+   *     CreditCard().capture('some-id');
+   *
+   * @method
+   * @param {string} chargeID
+   * @param {number} amount
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  capture (chargeID, amount) {
+    return this.request('GET', `/payments/charges/${chargeID}`, {
+      amount: String(amount),
+      context: {
+        mobile: false,
+        isEcommerce: true
+      }
+    })
+  }
+
+  /**
+   * `CreditCard` `getRefund` method.
+   *
+   * Get information about a refund through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `chargeID`      identifier of the charge
+   *   - `refundID`      identifier of the refund
+   *
+   * Examples:
+   *
+   *     CreditCard().getRefund('some-id');
+   *
+   * @method
+   * @param {string} chargeID
+   * @param {string} refundID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  getRefund (chargeID, refundID) {
+    return this.request('GET', `/payments/charges/${chargeID}/refunds/${refundID}`, {})
+  }
+
+  /**
+   * `CreditCard` `refund` method.
+   *
+   * Process a refund for a charge through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `chargeID`      identifier of the charge
+   *   - `amount`        amount to capture
+   *   - `reason`        reason for the refund
+   *
+   * Examples:
+   *
+   *     CreditCard().capture('some-id');
+   *
+   * @method
+   * @param {string} chargeID
+   * @param {number} amount
+   * @param {string} reason
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  refund (chargeID, amount, reason) {
+    return this.request('POST', `/payments/charges/${chargeID}/refunds`, {
+      amount: String(amount),
+      description: reason
+    })
+  }
 }
