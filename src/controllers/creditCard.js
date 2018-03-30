@@ -149,6 +149,7 @@ export default class CreditCard extends Base {
    *   - `token`       tokenized version of the card
    *   - `amount`      the amount to charge the card
    *   - `currency`    the amount to charge will be in (default `USD`)
+   *   - `description` description for the charge
    *
    * Examples:
    *
@@ -157,15 +158,17 @@ export default class CreditCard extends Base {
    * @method
    * @param {string} token
    * @param {number} amount
+   * @param {string} description
    * @param {string} currency
    * @access public
    * @return {Promise} promise containing network response object
    */
-  chargeByToken (token, amount, currency = 'USD') {
+  chargeByToken (token, amount, description, currency = 'USD') {
     return this.request('POST', `/payments/charges`, {
       amount: String(amount),
       token: token,
-      currency: currency
+      currency: currency,
+      description: description
     })
   }
 
@@ -177,6 +180,7 @@ export default class CreditCard extends Base {
    * Required Options:
    *   - `cardID`      identifier of the card
    *   - `amount`      the amount to charge the card
+   *   - `description` description for the charge
    *   - `currency`    the amount to charge will be in (default `USD`)
    *
    * Examples:
@@ -186,15 +190,17 @@ export default class CreditCard extends Base {
    * @method
    * @param {string} cardID
    * @param {number} amount
+   * @param {string} description
    * @param {string} currency
    * @access public
    * @return {Promise} promise containing network response object
    */
-  chargeByID (cardID, amount, currency = 'USD') {
+  chargeByID (cardID, amount, description, currency = 'USD') {
     return this.request('POST', `/payments/charges`, {
       amount: String(amount),
       cardOnFile: cardID,
-      currency: currency
+      currency: currency,
+      description: description
     })
   }
 
@@ -283,7 +289,7 @@ export default class CreditCard extends Base {
    *
    * Examples:
    *
-   *     CreditCard().capture('some-id');
+   *     CreditCard().refund('some-id', 5.00, 'the reason');
    *
    * @method
    * @param {string} chargeID

@@ -139,4 +139,95 @@ export default class BankAccount extends Base {
   all (customerID) {
     return this.request('GET', `/customers/${customerID}/bank-accounts`, {})
   }
+
+  /**
+   * `BankAccount` `chargeByID` method.
+   *
+   * Charge a bank account for a customer through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `token`       tokenized version of the card
+   *   - `amount`      the amount to charge the card
+   *   - `description` description for the charge
+   *
+   * Examples:
+   *
+   *     BankAccount().chargeByToken(
+   *        'some-token',
+   *        10.55,
+   *        'the description'
+   *     );
+   *
+   * @method
+   * @param {string} token
+   * @param {number} amount
+   * @param {string} description
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  chargeByToken (token, amount, description) {
+    return this.request('POST', `/payments/echecks`, {
+      token: token,
+      amount: amount,
+      paymentMode: 'WEB',
+      description: description
+    })
+  }
+
+  /**
+   * `BankAccount` `chargeByID` method.
+   *
+   * Charge a bank account for a customer through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `bankID`      id of the bank account
+   *   - `amount`      the amount to charge the card
+   *   - `description` description for the charge
+   *
+   * Examples:
+   *
+   *     BankAccount().chargeByID(
+   *        'some-id',
+   *        10.55,
+   *        'the description'
+   *     );
+   *
+   * @method
+   * @param {string} bankID
+   * @param {number} amount
+   * @param {string} description
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  chargeByID (bankID, amount, description) {
+    return this.request('POST', `/payments/echecks`, {
+      bankAccountOnFile: bankID,
+      amount: amount,
+      paymentMode: 'WEB',
+      description: description
+    })
+  }
+
+  /**
+   * `BankAccount` `receipt` method.
+   *
+   * Get a receipt of a previous charge through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `checkID`     id of the charge
+   *
+   * Examples:
+   *
+   *     BankAccount().receipt(
+   *        'some-id',
+   *     );
+   *
+   * @method
+   * @param {string} checkID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  receipt (checkID) {
+    return this.request('POST', `/payments/echecks/${checkID}`, {})
+  }
 }
