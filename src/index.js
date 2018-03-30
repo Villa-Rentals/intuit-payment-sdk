@@ -2,6 +2,7 @@
 
 import BankAccount from './controllers/bankAccount'
 import CreditCard from './controllers/creditCard'
+import Token from './controllers/token'
 
 export default class Intuit {
   constructor (args) {
@@ -20,6 +21,15 @@ export default class Intuit {
 
   CreditCard (accessToken, realmID) {
     return new CreditCard({
+      version: this.version,
+      production: this.production,
+      accessToken: accessToken,
+      realmID: realmID
+    })
+  }
+
+  Token (accessToken, realmID) {
+    return new Token({
       version: this.version,
       production: this.production,
       accessToken: accessToken,

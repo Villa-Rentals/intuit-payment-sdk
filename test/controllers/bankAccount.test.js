@@ -27,7 +27,7 @@ describe('Given an instance of BankAccount', () => {
         assert.equal(data.name, 'My Checking')
       })
       .catch((error) => {
-        assert.isNull(error, 'Error should be null')
+        assert.equal(error.response.status, 409)
       })
   })
 
@@ -37,18 +37,30 @@ describe('Given an instance of BankAccount', () => {
         assert.equal(data.id, bankID)
       })
       .catch((error) => {
-        assert.isNull(error, 'Error should be null')
+        if (!bankID) {
+          assert.equal(error.response.status, 404)
+        } else {
+          assert.isNull(error, 'Error should be null')
+        }
       })
   })
 
   it('get all bank accounts', () => {
     return lib.all('customerID')
       .then(({data}) => {
-        assert.isArray(data, 'Response is array')
-        assert.equal(data[0].id, bankID)
+        if (!bankID) {
+          assert.isTrue(true)
+        } else {
+          assert.isArray(data, 'Response is array')
+          assert.equal(data[0].id, bankID)
+        }
       })
       .catch((error) => {
-        assert.isNull(error, 'Error should be null')
+        if (!bankID) {
+          assert.equal(error.response.status, 404)
+        } else {
+          assert.isNull(error, 'Error should be null')
+        }
       })
   })
 
@@ -58,7 +70,11 @@ describe('Given an instance of BankAccount', () => {
         assert.isTrue(true)
       })
       .catch((error) => {
-        assert.isNull(error, 'Error should be null')
+        if (!bankID) {
+          assert.equal(error.response.status, 404)
+        } else {
+          assert.isNull(error, 'Error should be null')
+        }
       })
   })
 })
