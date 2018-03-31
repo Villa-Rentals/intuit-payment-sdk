@@ -99,5 +99,8 @@ hs_err_pid*
 # Build output
 lib/
 
+# Documentation
+docs/
+
 # Log file
 log

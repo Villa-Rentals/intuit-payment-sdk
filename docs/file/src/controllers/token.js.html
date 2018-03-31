@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/controllers/token.js | intuitPaymentSDK</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Unofficial SDK to access the Intuit Payment API"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="intuitPaymentSDK"><meta property="twitter:description" content="Unofficial SDK to access the Intuit Payment API"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/index.js~Intuit.html">Intuit</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/bankAccount.js~BankAccount.html">BankAccount</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/creditCard.js~CreditCard.html">CreditCard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/token.js~Token.html">Token</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers-abstract">controllers/abstract</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/abstract/base.js~Base.html">Base</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#errors">errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/errors/notImplementedError.js~NotImplementedError.html">NotImplementedError</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/controllers/token.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&apos;use strict&apos;
+
+import Base from &apos;./abstract/base&apos;
+
+export default class Token extends Base {
+  /**
+   * `Token` `create` method.
+   *
+   * Create a token from bank account or credit card through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `object`
+   *     - `card`               required if bankaccount is empty
+   *       - `number`           number on the card
+   *       - `expMonth`         expiration month on the card
+   *       - `expYear`          expiration year on the card
+   *       - `name`             name on the card
+   *       - `address`
+   *         - `streetAddress`  street address of billing address
+   *         - `city`           city of billing address
+   *         - `region`         region of billing address
+   *         - `country`        country of billing address
+   *         - `postalCode`     postalCode of billing address
+   *     - `bankaccount`        required if bankaccount is empty
+   *       - `name`             name of person
+   *       - `routingNumber`    routing number for account
+   *       - `accountNumber`    account number for account
+   *       - `accountType`      account type (i.e. `PERSONAL_CHECKING` or `PERSONAL_SAVINGS`)
+   *       - `phone`            phone number of person
+   *
+   * Examples:
+   *
+   *     Token().create({
+   *       &quot;number&quot;: &quot;4408041234567893&quot;,
+   *       &quot;expMonth&quot;: &quot;12&quot;,
+   *       &quot;expYear&quot;: &quot;2026&quot;,
+   *       &quot;name&quot;: &quot;Test User&quot;,
+   *       &quot;address&quot;: {
+   *         &quot;streetAddress&quot;: &quot;1245 Hana Rd&quot;,
+   *         &quot;city&quot;: &quot;Richmond&quot;,
+   *         &quot;region&quot;: &quot;VA&quot;,
+   *         &quot;country&quot;: &quot;US&quot;,
+   *         &quot;postalCode&quot;: &quot;44112&quot;
+   *       }
+   *     });
+   *
+   * @method
+   * @param {object} object
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  create (object) {
+    return this.request(&apos;POST&apos;, `/payments/tokens`, object)
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

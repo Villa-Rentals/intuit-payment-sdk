@@ -1,0 +1,2318 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/controllers/abstract/base.js",
+    "content": "'use strict'\n\nimport axios from 'axios'\nimport { v1 as uuidv1 } from 'uuid'\nimport NotImplementedError from '../../errors/notImplementedError'\n\nexport default class Base {\n  constructor (args) {\n    this.accessToken = args.accessToken\n    this.realmID = args.realmID\n    this.production = args.production\n    this.version = args.version\n  }\n\n  formatUrl (path) {\n    let domain = 'sandbox.api.intuit.com'\n    if (this.production) {\n      domain = 'api.intuit.com'\n    }\n    return `https://${domain}/quickbooks/${this.version}${path}`\n  }\n\n  request (method, path, params = {}) {\n    let headers = {\n      'Authorization': `Bearer ${this.accessToken}`,\n      'Content-Type': 'application/json',\n      'Company-Id': this.realmID,\n      'Request-Id': uuidv1()\n    }\n    return axios({\n      method: method,\n      url: this.formatUrl(path),\n      data: params,\n      headers: headers\n    })\n  }\n\n  create (info) {\n    throw new NotImplementedError()\n  }\n\n  createFromToken (info) {\n    throw new NotImplementedError()\n  }\n\n  get (id) {\n    throw new NotImplementedError()\n  }\n\n  all () {\n    throw new NotImplementedError()\n  }\n\n  remove (id) {\n    throw new NotImplementedError()\n  }\n\n  update (id, info) {\n    throw new NotImplementedError()\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/bolencki13/Villa/intuit-sdk/src/controllers/abstract/base.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "Base",
+    "memberof": "src/controllers/abstract/base.js",
+    "static": true,
+    "longname": "src/controllers/abstract/base.js~Base",
+    "access": "public",
+    "export": true,
+    "importPath": "intuitPaymentSDK/src/controllers/abstract/base.js",
+    "importStyle": "Base",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 50,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "member",
+    "name": "accessToken",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#accessToken",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "realmID",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#realmID",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "production",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#production",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "version",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#version",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "method",
+    "name": "formatUrl",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#formatUrl",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "request",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#request",
+    "access": "public",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "params": [
+      {
+        "name": "method",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "params",
+        "optional": true,
+        "types": [
+          "{}"
+        ],
+        "defaultRaw": {},
+        "defaultValue": "{}"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#create",
+    "access": "public",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "params": [
+      {
+        "name": "info",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "createFromToken",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#createFromToken",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "params": [
+      {
+        "name": "info",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "get",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#get",
+    "access": "public",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "all",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#all",
+    "access": "public",
+    "description": null,
+    "lineNumber": 50,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "remove",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#remove",
+    "access": "public",
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/controllers/abstract/base.js~Base",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/abstract/base.js~Base#update",
+    "access": "public",
+    "description": null,
+    "lineNumber": 58,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "info",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "src/controllers/bankAccount.js",
+    "content": "'use strict'\n\nimport Base from './abstract/base'\n\nexport default class BankAccount extends Base {\n  /**\n   * `BankAccount` `create` method.\n   *\n   * Create a bank account object through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `bank`\n   *     - `name`           name of person\n   *     - `routingNumber`  routing number for account\n   *     - `accountNumber`  account number for account\n   *     - `accountType`    account type (i.e. `PERSONAL_CHECKING` or `PERSONAL_SAVINGS`)\n   *     - `phone`          phone number of person\n   *   - `customerID`       identifier for the customer\n   *\n   * Examples:\n   *\n   *     BankAccount().create({\n   *        \"name\": \"My Checking\",\n   *        \"routingNumber\": \"XXXXX0358\",\n   *        \"accountNumber\": \"XXXX4534\",\n   *        \"accountType\": \"PERSONAL_CHECKING\",\n   *        \"phone\": \"6047296480\"\n   *     }, 'customer-id');\n   *\n   * @method\n   * @param {object} bank\n   * @param {string} customerID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  create (bank, customerID) {\n    return this.request('POST', `/customers/${customerID}/bank-accounts`, bank)\n  }\n\n  /**\n   * `BankAccount` `createFromToken` method.\n   *\n   * Create a bank account object from a token through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `token`       tokenized version of the bank account\n   *   - `customerID`  identifier for the customer\n   *\n   * Examples:\n   *\n   *     BankAccount().createFromToken(\n   *        'some-token',\n   *        'customer-id'\n   *     );\n   *\n   * @method\n   * @param {string} token\n   * @param {string} customerID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  createFromToken (token, customerID) {\n    return this.request('POST', `/customers/${customerID}/bank-accounts/createFromToken`, {\n      value: token\n    })\n  }\n\n  /**\n   * `BankAccount` `remove` method.\n   *\n   * Remove a bank account through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `bankID`      tokenized version of the bank account\n   *   - `customerID`  identifier for the customer\n   *\n   * Examples:\n   *\n   *     BankAccount().remove(\n   *        'some-identifier',\n   *        'customer-id'\n   *     );\n   *\n   * @method\n   * @param {string} bankID\n   * @param {string} customerID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  remove (bankID, customerID) {\n    return this.request('DELETE', `/customers/${customerID}/bank-accounts/${bankID}`, {})\n  }\n\n  /**\n   * `BankAccount` `get` method.\n   *\n   * Retrieve a bank account's information through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `bankID`       tokenized version of the bank account\n   *   - `customerID`  identifier for the customer\n   *\n   * Examples:\n   *\n   *     BankAccount().remove(\n   *        'some-identifier',\n   *        'customer-id'\n   *     );\n   *\n   * @method\n   * @param {string} bankID\n   * @param {string} customerID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  get (bankID, customerID) {\n    return this.request('GET', `/customers/${customerID}/bank-accounts/${bankID}`, {})\n  }\n\n  /**\n   * `BankAccount` `all` method.\n   *\n   * Retrieve all bank accounts for a customer through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `customerID`  identifier for the customer\n   *\n   * Examples:\n   *\n   *     BankAccount().all(\n   *        'customer-id'\n   *     );\n   *\n   * @method\n   * @param {string} customerID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  all (customerID) {\n    return this.request('GET', `/customers/${customerID}/bank-accounts`, {})\n  }\n\n  /**\n   * `BankAccount` `chargeByID` method.\n   *\n   * Charge a bank account for a customer through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `token`       tokenized version of the card\n   *   - `amount`      the amount to charge the card\n   *   - `description` description for the charge\n   *\n   * Examples:\n   *\n   *     BankAccount().chargeByToken(\n   *        'some-token',\n   *        10.55,\n   *        'the description'\n   *     );\n   *\n   * @method\n   * @param {string} token\n   * @param {number} amount\n   * @param {string} description\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  chargeByToken (token, amount, description) {\n    return this.request('POST', `/payments/echecks`, {\n      token: token,\n      amount: Number(amount).toFixed(2),\n      paymentMode: 'WEB',\n      description: description\n    })\n  }\n\n  /**\n   * `BankAccount` `chargeByID` method.\n   *\n   * Charge a bank account for a customer through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `bankID`      id of the bank account\n   *   - `amount`      the amount to charge the card\n   *   - `description` description for the charge\n   *\n   * Examples:\n   *\n   *     BankAccount().chargeByID(\n   *        'some-id',\n   *        10.55,\n   *        'the description'\n   *     );\n   *\n   * @method\n   * @param {string} bankID\n   * @param {number} amount\n   * @param {string} description\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  chargeByID (bankID, amount, description) {\n    return this.request('POST', `/payments/echecks`, {\n      bankAccountOnFile: bankID,\n      amount: Number(amount).toFixed(2),\n      paymentMode: 'WEB',\n      description: description\n    })\n  }\n\n  /**\n   * `BankAccount` `receipt` method.\n   *\n   * Get a receipt of a previous charge through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `checkID`     id of the charge\n   *\n   * Examples:\n   *\n   *     BankAccount().receipt(\n   *        'some-id',\n   *     );\n   *\n   * @method\n   * @param {string} checkID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  receipt (checkID) {\n    return this.request('GET', `/payments/echecks/${checkID}`, {})\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/bolencki13/Villa/intuit-sdk/src/controllers/bankAccount.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "class",
+    "name": "BankAccount",
+    "memberof": "src/controllers/bankAccount.js",
+    "static": true,
+    "longname": "src/controllers/bankAccount.js~BankAccount",
+    "access": "public",
+    "export": true,
+    "importPath": "intuitPaymentSDK/src/controllers/bankAccount.js",
+    "importStyle": "BankAccount",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/controllers/abstract/base.js~Base"
+    ]
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/controllers/bankAccount.js~BankAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/bankAccount.js~BankAccount#create",
+    "access": "public",
+    "description": "`BankAccount` `create` method.\n\nCreate a bank account object through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `bank`\n    - `name`           name of person\n    - `routingNumber`  routing number for account\n    - `accountNumber`  account number for account\n    - `accountType`    account type (i.e. `PERSONAL_CHECKING` or `PERSONAL_SAVINGS`)\n    - `phone`          phone number of person\n  - `customerID`       identifier for the customer\n\nExamples:\n\n    BankAccount().create({\n       \"name\": \"My Checking\",\n       \"routingNumber\": \"XXXXX0358\",\n       \"accountNumber\": \"XXXX4534\",\n       \"accountType\": \"PERSONAL_CHECKING\",\n       \"phone\": \"6047296480\"\n    }, 'customer-id');",
+    "lineNumber": 36,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bank",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "createFromToken",
+    "memberof": "src/controllers/bankAccount.js~BankAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/bankAccount.js~BankAccount#createFromToken",
+    "access": "public",
+    "description": "`BankAccount` `createFromToken` method.\n\nCreate a bank account object from a token through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `token`       tokenized version of the bank account\n  - `customerID`  identifier for the customer\n\nExamples:\n\n    BankAccount().createFromToken(\n       'some-token',\n       'customer-id'\n    );",
+    "lineNumber": 62,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "token",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "remove",
+    "memberof": "src/controllers/bankAccount.js~BankAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/bankAccount.js~BankAccount#remove",
+    "access": "public",
+    "description": "`BankAccount` `remove` method.\n\nRemove a bank account through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `bankID`      tokenized version of the bank account\n  - `customerID`  identifier for the customer\n\nExamples:\n\n    BankAccount().remove(\n       'some-identifier',\n       'customer-id'\n    );",
+    "lineNumber": 90,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bankID",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "get",
+    "memberof": "src/controllers/bankAccount.js~BankAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/bankAccount.js~BankAccount#get",
+    "access": "public",
+    "description": "`BankAccount` `get` method.\n\nRetrieve a bank account's information through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `bankID`       tokenized version of the bank account\n  - `customerID`  identifier for the customer\n\nExamples:\n\n    BankAccount().remove(\n       'some-identifier',\n       'customer-id'\n    );",
+    "lineNumber": 116,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bankID",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "all",
+    "memberof": "src/controllers/bankAccount.js~BankAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/bankAccount.js~BankAccount#all",
+    "access": "public",
+    "description": "`BankAccount` `all` method.\n\nRetrieve all bank accounts for a customer through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `customerID`  identifier for the customer\n\nExamples:\n\n    BankAccount().all(\n       'customer-id'\n    );",
+    "lineNumber": 139,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "chargeByToken",
+    "memberof": "src/controllers/bankAccount.js~BankAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/bankAccount.js~BankAccount#chargeByToken",
+    "access": "public",
+    "description": "`BankAccount` `chargeByID` method.\n\nCharge a bank account for a customer through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `token`       tokenized version of the card\n  - `amount`      the amount to charge the card\n  - `description` description for the charge\n\nExamples:\n\n    BankAccount().chargeByToken(\n       'some-token',\n       10.55,\n       'the description'\n    );",
+    "lineNumber": 168,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "token",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "amount",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "description",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "chargeByID",
+    "memberof": "src/controllers/bankAccount.js~BankAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/bankAccount.js~BankAccount#chargeByID",
+    "access": "public",
+    "description": "`BankAccount` `chargeByID` method.\n\nCharge a bank account for a customer through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `bankID`      id of the bank account\n  - `amount`      the amount to charge the card\n  - `description` description for the charge\n\nExamples:\n\n    BankAccount().chargeByID(\n       'some-id',\n       10.55,\n       'the description'\n    );",
+    "lineNumber": 202,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bankID",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "amount",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "description",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "receipt",
+    "memberof": "src/controllers/bankAccount.js~BankAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/bankAccount.js~BankAccount#receipt",
+    "access": "public",
+    "description": "`BankAccount` `receipt` method.\n\nGet a receipt of a previous charge through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `checkID`     id of the charge\n\nExamples:\n\n    BankAccount().receipt(\n       'some-id',\n    );",
+    "lineNumber": 230,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "checkID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "src/controllers/creditCard.js",
+    "content": "'use strict'\n\nimport Base from './abstract/base'\n\nexport default class CreditCard extends Base {\n  /**\n   * `CreditCard` `create` method.\n   *\n   * Create a credit card object through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `card`\n   *     - `number`           number on the card\n   *     - `expMonth`         expiration month on the card\n   *     - `expYear`          expiration year on the card\n   *     - `name`             name on the card\n   *     - `address`\n   *       - `streetAddress`  street address of billing address\n   *       - `city`           city of billing address\n   *       - `region`         region of billing address\n   *       - `country`        country of billing address\n   *       - `postalCode`     postalCode of billing address\n   *   - `customerID`       identifier for the customer\n   *\n   * Examples:\n   *\n   *     CreditCard().create({\n   *       \"number\": \"4408041234567893\",\n   *       \"expMonth\": \"12\",\n   *       \"expYear\": \"2026\",\n   *       \"name\": \"Test User\",\n   *       \"address\": {\n   *         \"streetAddress\": \"1245 Hana Rd\",\n   *         \"city\": \"Richmond\",\n   *         \"region\": \"VA\",\n   *         \"country\": \"US\",\n   *         \"postalCode\": \"44112\"\n   *       }\n   *     }, 'customer-id');\n   *\n   * @method\n   * @param {object} card\n   * @param {string} customerID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  create (card, customerID) {\n    return this.request('POST', `/customers/${customerID}/cards`, card)\n  }\n\n  /**\n   * `CreditCard` `createFromToken` method.\n   *\n   * Create a credit card object through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `token`            tokenized version of the card\n   *   - `customerID`       identifier for the customer\n   *\n   * Examples:\n   *\n   *     CreditCard().createFromToken('some-token', 'customer-id');\n   *\n   * @method\n   * @param {object} token\n   * @param {string} customerID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  createFromToken (token, customerID) {\n    return this.request('POST', `/customers/${customerID}/cards`, {\n      value: token\n    })\n  }\n\n  /**\n   * `CreditCard` `remove` method.\n   *\n   * Remove a credit card through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `cardID`           identifier of the card\n   *   - `customerID`       identifier for the customer\n   *\n   * Examples:\n   *\n   *     CreditCard().remove('identifier', 'customer-id');\n   *\n   * @method\n   * @param {object} cardID\n   * @param {string} customerID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  remove (cardID, customerID) {\n    return this.request('DELETE', `/customers/${customerID}/cards/${cardID}`, {})\n  }\n\n  /**\n   * `CreditCard` `get` method.\n   *\n   * Retrieve a credit card through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `cardID`           identifier of the card\n   *   - `customerID`       identifier for the customer\n   *\n   * Examples:\n   *\n   *     CreditCard().get('identifier', 'customer-id');\n   *\n   * @method\n   * @param {object} cardID\n   * @param {string} customerID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  get (cardID, customerID) {\n    return this.request('GET', `/customers/${customerID}/cards/${cardID}`, {})\n  }\n\n  /**\n   * `CreditCard` `all` method.\n   *\n   * Retrieve all credit cards through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `customerID`       identifier for the customer\n   *\n   * Examples:\n   *\n   *     CreditCard().all('customer-id');\n   *\n   * @method\n   * @param {string} customerID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  all (customerID) {\n    return this.request('GET', `/customers/${customerID}/cards`, {})\n  }\n\n  /**\n   * `CreditCard` `chargeByToken` method.\n   *\n   * Charge a credit card through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `token`       tokenized version of the card\n   *   - `amount`      the amount to charge the card\n   *   - `currency`    the amount to charge will be in (default `USD`)\n   *   - `description` description for the charge\n   *\n   * Examples:\n   *\n   *     CreditCard().chargeByToken('some-token', 10.55);\n   *\n   * @method\n   * @param {string} token\n   * @param {number} amount\n   * @param {string} description\n   * @param {string} currency\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  chargeByToken (token, amount, description, currency = 'USD') {\n    return this.request('POST', `/payments/charges`, {\n      amount: Number(amount).toFixed(2),\n      token: token,\n      currency: currency,\n      description: description\n    })\n  }\n\n  /**\n   * `CreditCard` `chargeByID` method.\n   *\n   * Charge a credit card through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `cardID`      identifier of the card\n   *   - `amount`      the amount to charge the card\n   *   - `description` description for the charge\n   *   - `currency`    the amount to charge will be in (default `USD`)\n   *\n   * Examples:\n   *\n   *     CreditCard().chargeByID('some-id', 10.55);\n   *\n   * @method\n   * @param {string} cardID\n   * @param {number} amount\n   * @param {string} description\n   * @param {string} currency\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  chargeByID (cardID, amount, description, currency = 'USD') {\n    return this.request('POST', `/payments/charges`, {\n      amount: Number(amount).toFixed(2),\n      cardOnFile: cardID,\n      currency: currency,\n      description: description,\n      context: {\n        mobile: false,\n        isEcommerce: true\n      }\n    })\n  }\n\n  /**\n   * `CreditCard` `receipt` method.\n   *\n   * Retrieve a charge through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `chargeID`      identifier of the charge\n   *\n   * Examples:\n   *\n   *     CreditCard().receipt('some-id');\n   *\n   * @method\n   * @param {string} chargeID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  receipt (chargeID) {\n    return this.request('GET', `/payments/charges/${chargeID}`, {})\n  }\n\n  /**\n   * `CreditCard` `capture` method.\n   *\n   * Capture an existing charge through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `chargeID`      identifier of the charge\n   *   - `amount`        amount to capture\n   *\n   * Examples:\n   *\n   *     CreditCard().capture('some-id');\n   *\n   * @method\n   * @param {string} chargeID\n   * @param {number} amount\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  capture (chargeID, amount) {\n    return this.request('POST', `/payments/charges/${chargeID}`, {\n      amount: Number(amount).toFixed(2),\n      context: {\n        mobile: false,\n        isEcommerce: true\n      }\n    })\n  }\n\n  /**\n   * `CreditCard` `getRefund` method.\n   *\n   * Get information about a refund through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `chargeID`      identifier of the charge\n   *   - `refundID`      identifier of the refund\n   *\n   * Examples:\n   *\n   *     CreditCard().getRefund('some-id');\n   *\n   * @method\n   * @param {string} chargeID\n   * @param {string} refundID\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  getRefund (chargeID, refundID) {\n    return this.request('GET', `/payments/charges/${chargeID}/refunds/${refundID}`, {})\n  }\n\n  /**\n   * `CreditCard` `refund` method.\n   *\n   * Process a refund for a charge through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `chargeID`      identifier of the charge\n   *   - `amount`        amount to capture\n   *   - `reason`        reason for the refund\n   *\n   * Examples:\n   *\n   *     CreditCard().refund('some-id', 5.00, 'the reason');\n   *\n   * @method\n   * @param {string} chargeID\n   * @param {number} amount\n   * @param {string} reason\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  refund (chargeID, amount, reason) {\n    return this.request('POST', `/payments/charges/${chargeID}/refunds`, {\n      amount: Number(amount).toFixed(2),\n      description: reason\n    })\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/bolencki13/Villa/intuit-sdk/src/controllers/creditCard.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "class",
+    "name": "CreditCard",
+    "memberof": "src/controllers/creditCard.js",
+    "static": true,
+    "longname": "src/controllers/creditCard.js~CreditCard",
+    "access": "public",
+    "export": true,
+    "importPath": "intuitPaymentSDK/src/controllers/creditCard.js",
+    "importStyle": "CreditCard",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/controllers/abstract/base.js~Base"
+    ]
+  },
+  {
+    "__docId__": 75,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#create",
+    "access": "public",
+    "description": "`CreditCard` `create` method.\n\nCreate a credit card object through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `card`\n    - `number`           number on the card\n    - `expMonth`         expiration month on the card\n    - `expYear`          expiration year on the card\n    - `name`             name on the card\n    - `address`\n      - `streetAddress`  street address of billing address\n      - `city`           city of billing address\n      - `region`         region of billing address\n      - `country`        country of billing address\n      - `postalCode`     postalCode of billing address\n  - `customerID`       identifier for the customer\n\nExamples:\n\n    CreditCard().create({\n      \"number\": \"4408041234567893\",\n      \"expMonth\": \"12\",\n      \"expYear\": \"2026\",\n      \"name\": \"Test User\",\n      \"address\": {\n        \"streetAddress\": \"1245 Hana Rd\",\n        \"city\": \"Richmond\",\n        \"region\": \"VA\",\n        \"country\": \"US\",\n        \"postalCode\": \"44112\"\n      }\n    }, 'customer-id');",
+    "lineNumber": 47,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "card",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "method",
+    "name": "createFromToken",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#createFromToken",
+    "access": "public",
+    "description": "`CreditCard` `createFromToken` method.\n\nCreate a credit card object through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `token`            tokenized version of the card\n  - `customerID`       identifier for the customer\n\nExamples:\n\n    CreditCard().createFromToken('some-token', 'customer-id');",
+    "lineNumber": 70,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "token",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "method",
+    "name": "remove",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#remove",
+    "access": "public",
+    "description": "`CreditCard` `remove` method.\n\nRemove a credit card through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `cardID`           identifier of the card\n  - `customerID`       identifier for the customer\n\nExamples:\n\n    CreditCard().remove('identifier', 'customer-id');",
+    "lineNumber": 95,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cardID",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "method",
+    "name": "get",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#get",
+    "access": "public",
+    "description": "`CreditCard` `get` method.\n\nRetrieve a credit card through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `cardID`           identifier of the card\n  - `customerID`       identifier for the customer\n\nExamples:\n\n    CreditCard().get('identifier', 'customer-id');",
+    "lineNumber": 118,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cardID",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "all",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#all",
+    "access": "public",
+    "description": "`CreditCard` `all` method.\n\nRetrieve all credit cards through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `customerID`       identifier for the customer\n\nExamples:\n\n    CreditCard().all('customer-id');",
+    "lineNumber": 139,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "method",
+    "name": "chargeByToken",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#chargeByToken",
+    "access": "public",
+    "description": "`CreditCard` `chargeByToken` method.\n\nCharge a credit card through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `token`       tokenized version of the card\n  - `amount`      the amount to charge the card\n  - `currency`    the amount to charge will be in (default `USD`)\n  - `description` description for the charge\n\nExamples:\n\n    CreditCard().chargeByToken('some-token', 10.55);",
+    "lineNumber": 166,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "token",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "amount",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "description",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "currency",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "method",
+    "name": "chargeByID",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#chargeByID",
+    "access": "public",
+    "description": "`CreditCard` `chargeByID` method.\n\nCharge a credit card through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `cardID`      identifier of the card\n  - `amount`      the amount to charge the card\n  - `description` description for the charge\n  - `currency`    the amount to charge will be in (default `USD`)\n\nExamples:\n\n    CreditCard().chargeByID('some-id', 10.55);",
+    "lineNumber": 198,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cardID",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "amount",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "description",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "currency",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "method",
+    "name": "receipt",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#receipt",
+    "access": "public",
+    "description": "`CreditCard` `receipt` method.\n\nRetrieve a charge through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `chargeID`      identifier of the charge\n\nExamples:\n\n    CreditCard().receipt('some-id');",
+    "lineNumber": 228,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "chargeID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "method",
+    "name": "capture",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#capture",
+    "access": "public",
+    "description": "`CreditCard` `capture` method.\n\nCapture an existing charge through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `chargeID`      identifier of the charge\n  - `amount`        amount to capture\n\nExamples:\n\n    CreditCard().capture('some-id');",
+    "lineNumber": 251,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "chargeID",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "amount",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "method",
+    "name": "getRefund",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#getRefund",
+    "access": "public",
+    "description": "`CreditCard` `getRefund` method.\n\nGet information about a refund through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `chargeID`      identifier of the charge\n  - `refundID`      identifier of the refund\n\nExamples:\n\n    CreditCard().getRefund('some-id');",
+    "lineNumber": 280,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "chargeID",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "refundID",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "method",
+    "name": "refund",
+    "memberof": "src/controllers/creditCard.js~CreditCard",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/creditCard.js~CreditCard#refund",
+    "access": "public",
+    "description": "`CreditCard` `refund` method.\n\nProcess a refund for a charge through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `chargeID`      identifier of the charge\n  - `amount`        amount to capture\n  - `reason`        reason for the refund\n\nExamples:\n\n    CreditCard().refund('some-id', 5.00, 'the reason');",
+    "lineNumber": 305,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "chargeID",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "amount",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "reason",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/controllers/token.js",
+    "content": "'use strict'\n\nimport Base from './abstract/base'\n\nexport default class Token extends Base {\n  /**\n   * `Token` `create` method.\n   *\n   * Create a token from bank account or credit card through the Intuit Quickbooks payment API\n   *\n   * Required Options:\n   *   - `object`\n   *     - `card`               required if bankaccount is empty\n   *       - `number`           number on the card\n   *       - `expMonth`         expiration month on the card\n   *       - `expYear`          expiration year on the card\n   *       - `name`             name on the card\n   *       - `address`\n   *         - `streetAddress`  street address of billing address\n   *         - `city`           city of billing address\n   *         - `region`         region of billing address\n   *         - `country`        country of billing address\n   *         - `postalCode`     postalCode of billing address\n   *     - `bankaccount`        required if bankaccount is empty\n   *       - `name`             name of person\n   *       - `routingNumber`    routing number for account\n   *       - `accountNumber`    account number for account\n   *       - `accountType`      account type (i.e. `PERSONAL_CHECKING` or `PERSONAL_SAVINGS`)\n   *       - `phone`            phone number of person\n   *\n   * Examples:\n   *\n   *     Token().create({\n   *       \"number\": \"4408041234567893\",\n   *       \"expMonth\": \"12\",\n   *       \"expYear\": \"2026\",\n   *       \"name\": \"Test User\",\n   *       \"address\": {\n   *         \"streetAddress\": \"1245 Hana Rd\",\n   *         \"city\": \"Richmond\",\n   *         \"region\": \"VA\",\n   *         \"country\": \"US\",\n   *         \"postalCode\": \"44112\"\n   *       }\n   *     });\n   *\n   * @method\n   * @param {object} object\n   * @access public\n   * @return {Promise} promise containing network response object\n   */\n  create (object) {\n    return this.request('POST', `/payments/tokens`, object)\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/bolencki13/Villa/intuit-sdk/src/controllers/token.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "class",
+    "name": "Token",
+    "memberof": "src/controllers/token.js",
+    "static": true,
+    "longname": "src/controllers/token.js~Token",
+    "access": "public",
+    "export": true,
+    "importPath": "intuitPaymentSDK/src/controllers/token.js",
+    "importStyle": "Token",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/controllers/abstract/base.js~Base"
+    ]
+  },
+  {
+    "__docId__": 88,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/controllers/token.js~Token",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/controllers/token.js~Token#create",
+    "access": "public",
+    "description": "`Token` `create` method.\n\nCreate a token from bank account or credit card through the Intuit Quickbooks payment API\n\nRequired Options:\n  - `object`\n    - `card`               required if bankaccount is empty\n      - `number`           number on the card\n      - `expMonth`         expiration month on the card\n      - `expYear`          expiration year on the card\n      - `name`             name on the card\n      - `address`\n        - `streetAddress`  street address of billing address\n        - `city`           city of billing address\n        - `region`         region of billing address\n        - `country`        country of billing address\n        - `postalCode`     postalCode of billing address\n    - `bankaccount`        required if bankaccount is empty\n      - `name`             name of person\n      - `routingNumber`    routing number for account\n      - `accountNumber`    account number for account\n      - `accountType`      account type (i.e. `PERSONAL_CHECKING` or `PERSONAL_SAVINGS`)\n      - `phone`            phone number of person\n\nExamples:\n\n    Token().create({\n      \"number\": \"4408041234567893\",\n      \"expMonth\": \"12\",\n      \"expYear\": \"2026\",\n      \"name\": \"Test User\",\n      \"address\": {\n        \"streetAddress\": \"1245 Hana Rd\",\n        \"city\": \"Richmond\",\n        \"region\": \"VA\",\n        \"country\": \"US\",\n        \"postalCode\": \"44112\"\n      }\n    });",
+    "lineNumber": 52,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "object",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "promise containing network response object"
+    }
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/errors/envInitializationError.js",
+    "content": "/**\n * Copyright: Copyright © 2017\n * This file contains trade secrets of Villa Rentals. No part may be reproduced or transmitted in any\n * form by any means or for any purpose without the express written permission of Villa Rentals.\n */\n\n'use strict'\n\nmodule.exports = class EnvInitializationError extends Error {\n  constructor (message, status) {\n    super(message)\n\n    this.name = this.constructor.name\n    Error.captureStackTrace(this, this.constructor)\n    this.status = status || 500\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/bolencki13/Villa/intuit-sdk/src/errors/envInitializationError.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "class",
+    "name": "exports",
+    "memberof": "src/errors/envInitializationError.js",
+    "static": true,
+    "longname": "src/errors/envInitializationError.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "intuitPaymentSDK/src/errors/envInitializationError.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/errors/envInitializationError.js~exports",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/errors/envInitializationError.js~exports#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/errors/envInitializationError.js~exports",
+    "static": false,
+    "longname": "src/errors/envInitializationError.js~exports#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "member",
+    "name": "status",
+    "memberof": "src/errors/envInitializationError.js~exports",
+    "static": false,
+    "longname": "src/errors/envInitializationError.js~exports#status",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "file",
+    "name": "src/errors/notImplementedError.js",
+    "content": "'use strict'\n\nexport default class NotImplementedError extends Error {\n  constructor (message = 'This method is abstract and has not been overriden yet. Check the stack trace') {\n    super(message)\n\n    this.name = this.constructor.name\n    Error.captureStackTrace(this, this.constructor)\n    this.status = 500\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/bolencki13/Villa/intuit-sdk/src/errors/notImplementedError.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 95,
+    "kind": "class",
+    "name": "NotImplementedError",
+    "memberof": "src/errors/notImplementedError.js",
+    "static": true,
+    "longname": "src/errors/notImplementedError.js~NotImplementedError",
+    "access": "public",
+    "export": true,
+    "importPath": "intuitPaymentSDK/src/errors/notImplementedError.js",
+    "importStyle": "NotImplementedError",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ]
+  },
+  {
+    "__docId__": 96,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/errors/notImplementedError.js~NotImplementedError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/errors/notImplementedError.js~NotImplementedError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/errors/notImplementedError.js~NotImplementedError",
+    "static": false,
+    "longname": "src/errors/notImplementedError.js~NotImplementedError#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "member",
+    "name": "status",
+    "memberof": "src/errors/notImplementedError.js~NotImplementedError",
+    "static": false,
+    "longname": "src/errors/notImplementedError.js~NotImplementedError#status",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "'use strict'\n\nimport BankAccount from './controllers/bankAccount'\nimport CreditCard from './controllers/creditCard'\nimport Token from './controllers/token'\n\nexport default class Intuit {\n  constructor (args) {\n    this.version = args.version\n    this.production = args.production\n  }\n\n  BankAccount (accessToken, realmID) {\n    return new BankAccount({\n      version: this.version,\n      production: this.production,\n      accessToken: accessToken,\n      realmID: realmID\n    })\n  }\n\n  CreditCard (accessToken, realmID) {\n    return new CreditCard({\n      version: this.version,\n      production: this.production,\n      accessToken: accessToken,\n      realmID: realmID\n    })\n  }\n\n  Token (accessToken, realmID) {\n    return new Token({\n      version: this.version,\n      production: this.production,\n      accessToken: accessToken,\n      realmID: realmID\n    })\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/bolencki13/Villa/intuit-sdk/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "class",
+    "name": "Intuit",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~Intuit",
+    "access": "public",
+    "export": true,
+    "importPath": "intuitPaymentSDK/src/index.js",
+    "importStyle": "Intuit",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 101,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/index.js~Intuit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/index.js~Intuit#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "member",
+    "name": "version",
+    "memberof": "src/index.js~Intuit",
+    "static": false,
+    "longname": "src/index.js~Intuit#version",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 103,
+    "kind": "member",
+    "name": "production",
+    "memberof": "src/index.js~Intuit",
+    "static": false,
+    "longname": "src/index.js~Intuit#production",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 104,
+    "kind": "method",
+    "name": "BankAccount",
+    "memberof": "src/index.js~Intuit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/index.js~Intuit#BankAccount",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "accessToken",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "realmID",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 105,
+    "kind": "method",
+    "name": "CreditCard",
+    "memberof": "src/index.js~Intuit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/index.js~Intuit#CreditCard",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "params": [
+      {
+        "name": "accessToken",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "realmID",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 106,
+    "kind": "method",
+    "name": "Token",
+    "memberof": "src/index.js~Intuit",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/index.js~Intuit#Token",
+    "access": "public",
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "params": [
+      {
+        "name": "accessToken",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "realmID",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "",
+    "longname": "/Users/bolencki13/Villa/intuit-sdk/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"intuitPaymentSDK\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Unofficial SDK to access the Intuit Payment API\",\n  \"main\": \"lib/intuit-payment-sdk.js\",\n  \"scripts\": {\n    \"build\": \"NODE_ENV=build webpack --env dev && webpack --env build && npm run test\",\n    \"dev\": \"NODE_ENV=dev webpack --progress --colors --watch --env dev\",\n    \"test\": \"mocha --require babel-core/register --colors './test/**/*.test.js'\",\n    \"test:watch\": \"mocha --require babel-core/register --colors -w './test/**/*.test.js'\",\n    \"lint\": \"./node_modules/.bin/eslint . --fix\",\n    \"prepush\": \"npm run lint\",\n    \"docs:open\": \"open ./docs/index.html\",\n    \"docs\": \"./node_modules/.bin/esdoc\"\n  },\n  \"author\": \"Villa Rentals, Inc.\",\n  \"license\": \"MIT\",\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.26.0\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-eslint\": \"^8.0.3\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-plugin-add-module-exports\": \"^0.2.1\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"chai\": \"^4.1.2\",\n    \"dotenv\": \"^5.0.1\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^4.13.1\",\n    \"eslint-config-standard\": \"^10.2.1\",\n    \"eslint-loader\": \"^2.0.0\",\n    \"eslint-plugin-import\": \"^2.8.0\",\n    \"eslint-plugin-node\": \"^5.2.1\",\n    \"eslint-plugin-promise\": \"^3.6.0\",\n    \"eslint-plugin-standard\": \"^3.0.1\",\n    \"husky\": \"^0.14.3\",\n    \"mocha\": \"^4.0.1\",\n    \"webpack\": \"^3.10.0\",\n    \"yargs\": \"^10.0.3\"\n  },\n  \"dependencies\": {\n    \"axios\": \"^0.18.0\",\n    \"uuid\": \"^3.2.1\"\n  }\n}\n",
+    "longname": "/Users/bolencki13/Villa/intuit-sdk/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

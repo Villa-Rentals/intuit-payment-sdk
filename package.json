@@ -9,7 +9,9 @@
     "test": "mocha --require babel-core/register --colors './test/**/*.test.js'",
     "test:watch": "mocha --require babel-core/register --colors -w './test/**/*.test.js'",
     "lint": "./node_modules/.bin/eslint . --fix",
-    "prepush": "npm run lint"
+    "prepush": "npm run lint",
+    "docs:open": "open ./docs/index.html",
+    "docs": "./node_modules/.bin/esdoc"
   },
   "author": "Villa Rentals, Inc.",
   "license": "MIT",
@@ -22,6 +24,8 @@
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "dotenv": "^5.0.1",
+    "esdoc": "^1.0.4",
+    "esdoc-standard-plugin": "^1.0.0",
     "eslint": "^4.13.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^2.0.0",

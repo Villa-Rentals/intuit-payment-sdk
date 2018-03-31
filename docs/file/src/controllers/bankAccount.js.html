@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/controllers/bankAccount.js | intuitPaymentSDK</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Unofficial SDK to access the Intuit Payment API"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="intuitPaymentSDK"><meta property="twitter:description" content="Unofficial SDK to access the Intuit Payment API"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/index.js~Intuit.html">Intuit</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/bankAccount.js~BankAccount.html">BankAccount</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/creditCard.js~CreditCard.html">CreditCard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/token.js~Token.html">Token</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers-abstract">controllers/abstract</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/abstract/base.js~Base.html">Base</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#errors">errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/errors/notImplementedError.js~NotImplementedError.html">NotImplementedError</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/controllers/bankAccount.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&apos;use strict&apos;
+
+import Base from &apos;./abstract/base&apos;
+
+export default class BankAccount extends Base {
+  /**
+   * `BankAccount` `create` method.
+   *
+   * Create a bank account object through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `bank`
+   *     - `name`           name of person
+   *     - `routingNumber`  routing number for account
+   *     - `accountNumber`  account number for account
+   *     - `accountType`    account type (i.e. `PERSONAL_CHECKING` or `PERSONAL_SAVINGS`)
+   *     - `phone`          phone number of person
+   *   - `customerID`       identifier for the customer
+   *
+   * Examples:
+   *
+   *     BankAccount().create({
+   *        &quot;name&quot;: &quot;My Checking&quot;,
+   *        &quot;routingNumber&quot;: &quot;XXXXX0358&quot;,
+   *        &quot;accountNumber&quot;: &quot;XXXX4534&quot;,
+   *        &quot;accountType&quot;: &quot;PERSONAL_CHECKING&quot;,
+   *        &quot;phone&quot;: &quot;6047296480&quot;
+   *     }, &apos;customer-id&apos;);
+   *
+   * @method
+   * @param {object} bank
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  create (bank, customerID) {
+    return this.request(&apos;POST&apos;, `/customers/${customerID}/bank-accounts`, bank)
+  }
+
+  /**
+   * `BankAccount` `createFromToken` method.
+   *
+   * Create a bank account object from a token through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `token`       tokenized version of the bank account
+   *   - `customerID`  identifier for the customer
+   *
+   * Examples:
+   *
+   *     BankAccount().createFromToken(
+   *        &apos;some-token&apos;,
+   *        &apos;customer-id&apos;
+   *     );
+   *
+   * @method
+   * @param {string} token
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  createFromToken (token, customerID) {
+    return this.request(&apos;POST&apos;, `/customers/${customerID}/bank-accounts/createFromToken`, {
+      value: token
+    })
+  }
+
+  /**
+   * `BankAccount` `remove` method.
+   *
+   * Remove a bank account through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `bankID`      tokenized version of the bank account
+   *   - `customerID`  identifier for the customer
+   *
+   * Examples:
+   *
+   *     BankAccount().remove(
+   *        &apos;some-identifier&apos;,
+   *        &apos;customer-id&apos;
+   *     );
+   *
+   * @method
+   * @param {string} bankID
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  remove (bankID, customerID) {
+    return this.request(&apos;DELETE&apos;, `/customers/${customerID}/bank-accounts/${bankID}`, {})
+  }
+
+  /**
+   * `BankAccount` `get` method.
+   *
+   * Retrieve a bank account&apos;s information through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `bankID`       tokenized version of the bank account
+   *   - `customerID`  identifier for the customer
+   *
+   * Examples:
+   *
+   *     BankAccount().remove(
+   *        &apos;some-identifier&apos;,
+   *        &apos;customer-id&apos;
+   *     );
+   *
+   * @method
+   * @param {string} bankID
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  get (bankID, customerID) {
+    return this.request(&apos;GET&apos;, `/customers/${customerID}/bank-accounts/${bankID}`, {})
+  }
+
+  /**
+   * `BankAccount` `all` method.
+   *
+   * Retrieve all bank accounts for a customer through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `customerID`  identifier for the customer
+   *
+   * Examples:
+   *
+   *     BankAccount().all(
+   *        &apos;customer-id&apos;
+   *     );
+   *
+   * @method
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  all (customerID) {
+    return this.request(&apos;GET&apos;, `/customers/${customerID}/bank-accounts`, {})
+  }
+
+  /**
+   * `BankAccount` `chargeByID` method.
+   *
+   * Charge a bank account for a customer through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `token`       tokenized version of the card
+   *   - `amount`      the amount to charge the card
+   *   - `description` description for the charge
+   *
+   * Examples:
+   *
+   *     BankAccount().chargeByToken(
+   *        &apos;some-token&apos;,
+   *        10.55,
+   *        &apos;the description&apos;
+   *     );
+   *
+   * @method
+   * @param {string} token
+   * @param {number} amount
+   * @param {string} description
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  chargeByToken (token, amount, description) {
+    return this.request(&apos;POST&apos;, `/payments/echecks`, {
+      token: token,
+      amount: Number(amount).toFixed(2),
+      paymentMode: &apos;WEB&apos;,
+      description: description
+    })
+  }
+
+  /**
+   * `BankAccount` `chargeByID` method.
+   *
+   * Charge a bank account for a customer through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `bankID`      id of the bank account
+   *   - `amount`      the amount to charge the card
+   *   - `description` description for the charge
+   *
+   * Examples:
+   *
+   *     BankAccount().chargeByID(
+   *        &apos;some-id&apos;,
+   *        10.55,
+   *        &apos;the description&apos;
+   *     );
+   *
+   * @method
+   * @param {string} bankID
+   * @param {number} amount
+   * @param {string} description
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  chargeByID (bankID, amount, description) {
+    return this.request(&apos;POST&apos;, `/payments/echecks`, {
+      bankAccountOnFile: bankID,
+      amount: Number(amount).toFixed(2),
+      paymentMode: &apos;WEB&apos;,
+      description: description
+    })
+  }
+
+  /**
+   * `BankAccount` `receipt` method.
+   *
+   * Get a receipt of a previous charge through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `checkID`     id of the charge
+   *
+   * Examples:
+   *
+   *     BankAccount().receipt(
+   *        &apos;some-id&apos;,
+   *     );
+   *
+   * @method
+   * @param {string} checkID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  receipt (checkID) {
+    return this.request(&apos;GET&apos;, `/payments/echecks/${checkID}`, {})
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

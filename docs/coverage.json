@@ -1,0 +1,81 @@
+{
+  "coverage": "38.46%",
+  "expectCount": 52,
+  "actualCount": 20,
+  "files": {
+    "src/controllers/abstract/base.js": {
+      "expectCount": 14,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        23,
+        38,
+        42,
+        46,
+        50,
+        54,
+        58
+      ]
+    },
+    "src/controllers/bankAccount.js": {
+      "expectCount": 9,
+      "actualCount": 8,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/controllers/creditCard.js": {
+      "expectCount": 12,
+      "actualCount": 11,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/controllers/token.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/errors/envInitializationError.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        9,
+        10,
+        13,
+        15
+      ]
+    },
+    "src/errors/notImplementedError.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        7,
+        9
+      ]
+    },
+    "src/index.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        9,
+        10,
+        13,
+        22,
+        31
+      ]
+    }
+  }
+}

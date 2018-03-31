@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/controllers/creditCard.js | intuitPaymentSDK</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Unofficial SDK to access the Intuit Payment API"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="intuitPaymentSDK"><meta property="twitter:description" content="Unofficial SDK to access the Intuit Payment API"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/index.js~Intuit.html">Intuit</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/bankAccount.js~BankAccount.html">BankAccount</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/creditCard.js~CreditCard.html">CreditCard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/token.js~Token.html">Token</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers-abstract">controllers/abstract</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/abstract/base.js~Base.html">Base</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#errors">errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/errors/notImplementedError.js~NotImplementedError.html">NotImplementedError</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/controllers/creditCard.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&apos;use strict&apos;
+
+import Base from &apos;./abstract/base&apos;
+
+export default class CreditCard extends Base {
+  /**
+   * `CreditCard` `create` method.
+   *
+   * Create a credit card object through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `card`
+   *     - `number`           number on the card
+   *     - `expMonth`         expiration month on the card
+   *     - `expYear`          expiration year on the card
+   *     - `name`             name on the card
+   *     - `address`
+   *       - `streetAddress`  street address of billing address
+   *       - `city`           city of billing address
+   *       - `region`         region of billing address
+   *       - `country`        country of billing address
+   *       - `postalCode`     postalCode of billing address
+   *   - `customerID`       identifier for the customer
+   *
+   * Examples:
+   *
+   *     CreditCard().create({
+   *       &quot;number&quot;: &quot;4408041234567893&quot;,
+   *       &quot;expMonth&quot;: &quot;12&quot;,
+   *       &quot;expYear&quot;: &quot;2026&quot;,
+   *       &quot;name&quot;: &quot;Test User&quot;,
+   *       &quot;address&quot;: {
+   *         &quot;streetAddress&quot;: &quot;1245 Hana Rd&quot;,
+   *         &quot;city&quot;: &quot;Richmond&quot;,
+   *         &quot;region&quot;: &quot;VA&quot;,
+   *         &quot;country&quot;: &quot;US&quot;,
+   *         &quot;postalCode&quot;: &quot;44112&quot;
+   *       }
+   *     }, &apos;customer-id&apos;);
+   *
+   * @method
+   * @param {object} card
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  create (card, customerID) {
+    return this.request(&apos;POST&apos;, `/customers/${customerID}/cards`, card)
+  }
+
+  /**
+   * `CreditCard` `createFromToken` method.
+   *
+   * Create a credit card object through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `token`            tokenized version of the card
+   *   - `customerID`       identifier for the customer
+   *
+   * Examples:
+   *
+   *     CreditCard().createFromToken(&apos;some-token&apos;, &apos;customer-id&apos;);
+   *
+   * @method
+   * @param {object} token
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  createFromToken (token, customerID) {
+    return this.request(&apos;POST&apos;, `/customers/${customerID}/cards`, {
+      value: token
+    })
+  }
+
+  /**
+   * `CreditCard` `remove` method.
+   *
+   * Remove a credit card through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `cardID`           identifier of the card
+   *   - `customerID`       identifier for the customer
+   *
+   * Examples:
+   *
+   *     CreditCard().remove(&apos;identifier&apos;, &apos;customer-id&apos;);
+   *
+   * @method
+   * @param {object} cardID
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  remove (cardID, customerID) {
+    return this.request(&apos;DELETE&apos;, `/customers/${customerID}/cards/${cardID}`, {})
+  }
+
+  /**
+   * `CreditCard` `get` method.
+   *
+   * Retrieve a credit card through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `cardID`           identifier of the card
+   *   - `customerID`       identifier for the customer
+   *
+   * Examples:
+   *
+   *     CreditCard().get(&apos;identifier&apos;, &apos;customer-id&apos;);
+   *
+   * @method
+   * @param {object} cardID
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  get (cardID, customerID) {
+    return this.request(&apos;GET&apos;, `/customers/${customerID}/cards/${cardID}`, {})
+  }
+
+  /**
+   * `CreditCard` `all` method.
+   *
+   * Retrieve all credit cards through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `customerID`       identifier for the customer
+   *
+   * Examples:
+   *
+   *     CreditCard().all(&apos;customer-id&apos;);
+   *
+   * @method
+   * @param {string} customerID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  all (customerID) {
+    return this.request(&apos;GET&apos;, `/customers/${customerID}/cards`, {})
+  }
+
+  /**
+   * `CreditCard` `chargeByToken` method.
+   *
+   * Charge a credit card through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `token`       tokenized version of the card
+   *   - `amount`      the amount to charge the card
+   *   - `currency`    the amount to charge will be in (default `USD`)
+   *   - `description` description for the charge
+   *
+   * Examples:
+   *
+   *     CreditCard().chargeByToken(&apos;some-token&apos;, 10.55);
+   *
+   * @method
+   * @param {string} token
+   * @param {number} amount
+   * @param {string} description
+   * @param {string} currency
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  chargeByToken (token, amount, description, currency = &apos;USD&apos;) {
+    return this.request(&apos;POST&apos;, `/payments/charges`, {
+      amount: Number(amount).toFixed(2),
+      token: token,
+      currency: currency,
+      description: description
+    })
+  }
+
+  /**
+   * `CreditCard` `chargeByID` method.
+   *
+   * Charge a credit card through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `cardID`      identifier of the card
+   *   - `amount`      the amount to charge the card
+   *   - `description` description for the charge
+   *   - `currency`    the amount to charge will be in (default `USD`)
+   *
+   * Examples:
+   *
+   *     CreditCard().chargeByID(&apos;some-id&apos;, 10.55);
+   *
+   * @method
+   * @param {string} cardID
+   * @param {number} amount
+   * @param {string} description
+   * @param {string} currency
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  chargeByID (cardID, amount, description, currency = &apos;USD&apos;) {
+    return this.request(&apos;POST&apos;, `/payments/charges`, {
+      amount: Number(amount).toFixed(2),
+      cardOnFile: cardID,
+      currency: currency,
+      description: description,
+      context: {
+        mobile: false,
+        isEcommerce: true
+      }
+    })
+  }
+
+  /**
+   * `CreditCard` `receipt` method.
+   *
+   * Retrieve a charge through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `chargeID`      identifier of the charge
+   *
+   * Examples:
+   *
+   *     CreditCard().receipt(&apos;some-id&apos;);
+   *
+   * @method
+   * @param {string} chargeID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  receipt (chargeID) {
+    return this.request(&apos;GET&apos;, `/payments/charges/${chargeID}`, {})
+  }
+
+  /**
+   * `CreditCard` `capture` method.
+   *
+   * Capture an existing charge through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `chargeID`      identifier of the charge
+   *   - `amount`        amount to capture
+   *
+   * Examples:
+   *
+   *     CreditCard().capture(&apos;some-id&apos;);
+   *
+   * @method
+   * @param {string} chargeID
+   * @param {number} amount
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  capture (chargeID, amount) {
+    return this.request(&apos;POST&apos;, `/payments/charges/${chargeID}`, {
+      amount: Number(amount).toFixed(2),
+      context: {
+        mobile: false,
+        isEcommerce: true
+      }
+    })
+  }
+
+  /**
+   * `CreditCard` `getRefund` method.
+   *
+   * Get information about a refund through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `chargeID`      identifier of the charge
+   *   - `refundID`      identifier of the refund
+   *
+   * Examples:
+   *
+   *     CreditCard().getRefund(&apos;some-id&apos;);
+   *
+   * @method
+   * @param {string} chargeID
+   * @param {string} refundID
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  getRefund (chargeID, refundID) {
+    return this.request(&apos;GET&apos;, `/payments/charges/${chargeID}/refunds/${refundID}`, {})
+  }
+
+  /**
+   * `CreditCard` `refund` method.
+   *
+   * Process a refund for a charge through the Intuit Quickbooks payment API
+   *
+   * Required Options:
+   *   - `chargeID`      identifier of the charge
+   *   - `amount`        amount to capture
+   *   - `reason`        reason for the refund
+   *
+   * Examples:
+   *
+   *     CreditCard().refund(&apos;some-id&apos;, 5.00, &apos;the reason&apos;);
+   *
+   * @method
+   * @param {string} chargeID
+   * @param {number} amount
+   * @param {string} reason
+   * @access public
+   * @return {Promise} promise containing network response object
+   */
+  refund (chargeID, amount, reason) {
+    return this.request(&apos;POST&apos;, `/payments/charges/${chargeID}/refunds`, {
+      amount: Number(amount).toFixed(2),
+      description: reason
+    })
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
