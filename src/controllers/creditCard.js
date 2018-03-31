@@ -200,7 +200,11 @@ export default class CreditCard extends Base {
       amount: Number(amount).toFixed(2),
       cardOnFile: cardID,
       currency: currency,
-      description: description
+      description: description,
+      context: {
+        mobile: false,
+        isEcommerce: true
+      }
     })
   }
 
@@ -245,7 +249,7 @@ export default class CreditCard extends Base {
    * @return {Promise} promise containing network response object
    */
   capture (chargeID, amount) {
-    return this.request('GET', `/payments/charges/${chargeID}`, {
+    return this.request('POST', `/payments/charges/${chargeID}`, {
       amount: Number(amount).toFixed(2),
       context: {
         mobile: false,
