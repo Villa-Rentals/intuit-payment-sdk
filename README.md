@@ -28,6 +28,10 @@ new Intuit({
 
 See the [documentation](docs/index.html) for more information about the SDK.
 
+## Work in Progress
+
+Tokenization of the bank accounts or credit cards does not work. There is an authentication error with the Intuit servers.
+
 ## Tests
 
 ```bash
