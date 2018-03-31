@@ -43,30 +43,18 @@ describe('Given an instance of CreditCard', () => {
         assert.equal(data.id, cardID)
       })
       .catch((error) => {
-        if (!cardID) {
-          assert.equal(error.response.status, 404)
-        } else {
-          assert.isNull(error, 'Error should be null')
-        }
+        assert.isNull(error, 'Error should be null')
       })
   })
 
   it('get all credit cards', () => {
     return lib.all('customerID')
       .then(({data}) => {
-        if (!cardID) {
-          assert.isTrue(true)
-        } else {
-          assert.isArray(data, 'Response is array')
-          assert.equal(data[0].id, cardID)
-        }
+        assert.isArray(data, 'Response is array')
+        assert.equal(data[0].id, cardID)
       })
       .catch((error) => {
-        if (!cardID) {
-          assert.equal(error.response.status, 404)
-        } else {
-          assert.isNull(error, 'Error should be null')
-        }
+        assert.isNull(error, 'Error should be null')
       })
   })
 
@@ -76,11 +64,7 @@ describe('Given an instance of CreditCard', () => {
         assert.isTrue(true)
       })
       .catch((error) => {
-        if (!cardID) {
-          assert.equal(error.response.status, 404)
-        } else {
-          assert.isNull(error, 'Error should be null')
-        }
+        assert.isNull(error, 'Error should be null')
       })
   })
 })

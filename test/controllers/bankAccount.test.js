@@ -6,6 +6,7 @@ import Intuit from '../../lib/intuitPaymentSDK.js'
 describe('Given an instance of BankAccount', () => {
   let lib
   let bankID
+  let checkID
 
   before(() => {
     lib = new Intuit({
@@ -37,30 +38,39 @@ describe('Given an instance of BankAccount', () => {
         assert.equal(data.id, bankID)
       })
       .catch((error) => {
-        if (!bankID) {
-          assert.equal(error.response.status, 404)
-        } else {
-          assert.isNull(error, 'Error should be null')
-        }
+        assert.isNull(error, 'Error should be null')
       })
   })
 
   it('get all bank accounts', () => {
     return lib.all('customerID')
       .then(({data}) => {
-        if (!bankID) {
-          assert.isTrue(true)
-        } else {
-          assert.isArray(data, 'Response is array')
-          assert.equal(data[0].id, bankID)
-        }
+        assert.isArray(data, 'Response is array')
+        assert.equal(data[0].id, bankID)
       })
       .catch((error) => {
-        if (!bankID) {
-          assert.equal(error.response.status, 404)
-        } else {
-          assert.isNull(error, 'Error should be null')
-        }
+        assert.isNull(error, 'Error should be null')
+      })
+  })
+
+  it('charge a bank account', () => {
+    return lib.chargeByID(bankID, 10.00, 'Test charge from the unit test')
+      .then(({data}) => {
+        checkID = data.id
+        assert.equal(data.amount, '10.00')
+      })
+      .catch((error) => {
+        assert.isNull(error, 'Error should be null')
+      })
+  })
+
+  it('get receipt for a charge with a bank account', () => {
+    return lib.receipt(checkID)
+      .then(({data}) => {
+        assert.equal(data.amount, '10.00')
+      })
+      .catch((error) => {
+        assert.isNull(error, 'Error should be null')
       })
   })
 
@@ -70,11 +80,7 @@ describe('Given an instance of BankAccount', () => {
         assert.isTrue(true)
       })
       .catch((error) => {
-        if (!bankID) {
-          assert.equal(error.response.status, 404)
-        } else {
-          assert.isNull(error, 'Error should be null')
-        }
+        assert.isNull(error, 'Error should be null')
       })
   })
 })

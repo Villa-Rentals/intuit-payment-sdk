@@ -168,7 +168,7 @@ export default class BankAccount extends Base {
   chargeByToken (token, amount, description) {
     return this.request('POST', `/payments/echecks`, {
       token: token,
-      amount: amount,
+      amount: Number(amount).toFixed(2),
       paymentMode: 'WEB',
       description: description
     })
@@ -202,7 +202,7 @@ export default class BankAccount extends Base {
   chargeByID (bankID, amount, description) {
     return this.request('POST', `/payments/echecks`, {
       bankAccountOnFile: bankID,
-      amount: amount,
+      amount: Number(amount).toFixed(2),
       paymentMode: 'WEB',
       description: description
     })
@@ -228,6 +228,6 @@ export default class BankAccount extends Base {
    * @return {Promise} promise containing network response object
    */
   receipt (checkID) {
-    return this.request('POST', `/payments/echecks/${checkID}`, {})
+    return this.request('GET', `/payments/echecks/${checkID}`, {})
   }
 }

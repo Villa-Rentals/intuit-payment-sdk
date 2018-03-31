@@ -165,7 +165,7 @@ export default class CreditCard extends Base {
    */
   chargeByToken (token, amount, description, currency = 'USD') {
     return this.request('POST', `/payments/charges`, {
-      amount: String(amount),
+      amount: Number(amount).toFixed(2),
       token: token,
       currency: currency,
       description: description
@@ -197,7 +197,7 @@ export default class CreditCard extends Base {
    */
   chargeByID (cardID, amount, description, currency = 'USD') {
     return this.request('POST', `/payments/charges`, {
-      amount: String(amount),
+      amount: Number(amount).toFixed(2),
       cardOnFile: cardID,
       currency: currency,
       description: description
@@ -246,7 +246,7 @@ export default class CreditCard extends Base {
    */
   capture (chargeID, amount) {
     return this.request('GET', `/payments/charges/${chargeID}`, {
-      amount: String(amount),
+      amount: Number(amount).toFixed(2),
       context: {
         mobile: false,
         isEcommerce: true
@@ -300,7 +300,7 @@ export default class CreditCard extends Base {
    */
   refund (chargeID, amount, reason) {
     return this.request('POST', `/payments/charges/${chargeID}/refunds`, {
-      amount: String(amount),
+      amount: Number(amount).toFixed(2),
       description: reason
     })
   }
