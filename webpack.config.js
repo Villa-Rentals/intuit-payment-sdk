@@ -9,9 +9,8 @@
 const webpack = require('webpack')
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin
 const path = require('path')
-const pkg = require('./package.json')
 
-let libraryName = pkg.name
+let libraryName = 'intuitPaymentSDK'
 
 let plugins = []
 let outputFile

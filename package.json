@@ -1,8 +1,8 @@
 {
-  "name": "intuitPaymentSDK",
+  "name": "intuit-quickbook-payment",
   "version": "1.0.0",
   "description": "Unofficial SDK to access the Intuit Payment API",
-  "main": "lib/intuit-payment-sdk.js",
+  "main": "lib/intuitPaymentSDK.js",
   "scripts": {
     "build": "NODE_ENV=build webpack --env dev && webpack --env build && npm run test",
     "dev": "NODE_ENV=dev webpack --progress --colors --watch --env dev",
