@@ -1,8 +1,27 @@
 {
   "name": "intuit-quickbook-payment",
   "version": "1.0.0",
-  "description": "Unofficial SDK to access the Intuit Payment API",
-  "main": "lib/intuitPaymentSDK.js",
+  "description": "Unofficial SDK to access the Intuit Quickbook Payment API",
+  "keywords": [
+    "intuit",
+    "payment",
+    "credit card",
+    "eCheck",
+    "quickbooks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/villarentals/intuit-payment-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/villarentals/intuit-payment-sdk/issues"
+  },
+  "author": {
+    "name": "Villa Rentals",
+    "email": "support@getvillarentals.com"
+  },
+  "license": "MIT",
+  "main": "./lib/intuit-quickbook-payment",
   "scripts": {
     "build": "NODE_ENV=build webpack --env dev && webpack --env build && npm run test",
     "dev": "NODE_ENV=dev webpack --progress --colors --watch --env dev",
@@ -13,8 +32,6 @@
     "docs:open": "open ./docs/index.html",
     "docs": "./node_modules/.bin/esdoc"
   },
-  "author": "Villa Rentals, Inc.",
-  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
