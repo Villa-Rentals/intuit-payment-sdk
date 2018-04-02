@@ -4,7 +4,9 @@ docs/
 examples/
 test/
 .es*
-.env*
+*env*
+.babel
+webpack.config.js
 
 # Mac OS X
 .DS_Store
