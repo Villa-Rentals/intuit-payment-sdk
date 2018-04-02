@@ -9,17 +9,18 @@
 const webpack = require('webpack')
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin
 const path = require('path')
+const pkg = require('./package.json')
 
-let libraryName = 'intuitPaymentSDK'
+let libraryName = pkg.name
 
 let plugins = []
 let outputFile
 
 if (process.env.ENV === 'build') {
   plugins.push(new UglifyJsPlugin({ minimize: true }))
-  outputFile = libraryName + '.min.js'
+  outputFile = 'index.min.js'
 } else {
-  outputFile = libraryName + '.js'
+  outputFile = 'index.js'
 }
 
 const config = {
@@ -27,7 +28,7 @@ const config = {
   entry: path.join(__dirname, '/src/index.js'),
   devtool: 'source-map',
   output: {
-    path: path.join(__dirname, '/lib'),
+    path: path.join(__dirname, '/lib', `/${libraryName}`),
     filename: outputFile,
     library: libraryName,
     libraryTarget: 'umd',
