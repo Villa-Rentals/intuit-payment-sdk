@@ -5,7 +5,7 @@ examples/
 test/
 .es*
 *env*
-.babel
+.babel*
 webpack.config.js
 
 # Mac OS X
