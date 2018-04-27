@@ -7,7 +7,7 @@ This module lets you add, remove, charge, and refund Credit Cards & eChecks usin
 ## Install
 
 ```js
-$ npm i -s git+ssh://git@github.com:VillaRentals/intuit-payment-sdk.git
+$ npm i -s git+ssh://git@github.com:Villa-Rentals/intuit-payment-sdk.git
 
 ```
 
@@ -15,7 +15,7 @@ $ npm i -s git+ssh://git@github.com:VillaRentals/intuit-payment-sdk.git
 
 #### Configure Strategy
 
-The Intuit Quickbooks Payment API authenticates using the OAuth 2.0 tokens previously provided (see [passport-intuit](https://github.com/VillaRentals/passport-intuit) for more information on getting these tokens). The SDK requires the version of the API along with a flag for production or development access.
+The Intuit Quickbooks Payment API authenticates using the OAuth 2.0 tokens previously provided (see [passport-intuit](https://github.com/Villa-Rentals/passport-intuit) for more information on getting these tokens). The SDK requires the version of the API along with a flag for production or development access.
 
 ```js
 new Intuit({
