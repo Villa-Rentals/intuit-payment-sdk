@@ -22,11 +22,15 @@ export default class Base {
 
   request (method, path, params = {}) {
     let headers = {
-      'Authorization': `Bearer ${this.accessToken}`,
-      'Content-Type': 'application/json',
-      'Company-Id': this.realmID,
-      'Request-Id': uuidv1()
+      'Content-Type': 'application/json'
     }
+
+    if (path !== '/payments/tokens') {
+      headers['Authorization'] = `Bearer ${this.accessToken}`
+      headers['Company-Id'] = this.realmID
+      headers['Request-Id'] = uuidv1()
+    }
+
     return axios({
       method: method,
       url: this.formatUrl(path),

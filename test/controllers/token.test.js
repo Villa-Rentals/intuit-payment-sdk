@@ -1,7 +1,7 @@
 'use strict'
 
 import { assert } from 'chai'
-import Intuit from '../../lib/intuitPaymentSDK.js'
+import Intuit from '../../lib/intuit-quickbook-payment'
 
 describe('Given an instance of Token', () => {
   let lib
@@ -33,13 +33,14 @@ describe('Given an instance of Token', () => {
         assert.isNotNull(data.value)
       })
       .catch((error) => {
+        console.log(error);
         assert.isNull(error, 'Error should be null')
       })
   })
 
   it('create token from bank account', () => {
     return lib.create({
-      bankaccount: {
+      bankAccount: {
         name: 'My Checking',
         routingNumber: '322079353',
         accountNumber: '11000000333456781',

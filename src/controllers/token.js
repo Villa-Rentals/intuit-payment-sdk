@@ -21,7 +21,7 @@ export default class Token extends Base {
    *         - `region`         region of billing address
    *         - `country`        country of billing address
    *         - `postalCode`     postalCode of billing address
-   *     - `bankaccount`        required if bankaccount is empty
+   *     - `bankAccount`        required if bankaccount is empty
    *       - `name`             name of person
    *       - `routingNumber`    routing number for account
    *       - `accountNumber`    account number for account
@@ -31,16 +31,18 @@ export default class Token extends Base {
    * Examples:
    *
    *     Token().create({
-   *       "number": "4408041234567893",
-   *       "expMonth": "12",
-   *       "expYear": "2026",
-   *       "name": "Test User",
-   *       "address": {
-   *         "streetAddress": "1245 Hana Rd",
-   *         "city": "Richmond",
-   *         "region": "VA",
-   *         "country": "US",
-   *         "postalCode": "44112"
+   *       "card": {
+   *         "number": "4408041234567893",
+   *         "expMonth": "12",
+   *         "expYear": "2026",
+   *         "name": "Test User",
+   *         "address": {
+   *           "streetAddress": "1245 Hana Rd",
+   *           "city": "Richmond",
+   *           "region": "VA",
+   *           "country": "US",
+   *           "postalCode": "44112"
+   *         }
    *       }
    *     });
    *

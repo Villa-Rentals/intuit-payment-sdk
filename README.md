@@ -28,10 +28,6 @@ new Intuit({
 
 See the [documentation](https://villa-rentals.github.io/intuit-payment-sdk/) for more information about the SDK.
 
-## Work in Progress
-
-Tokenization of the bank accounts or credit cards does not work. There is an authentication error with the Intuit servers.
-
 ## Tests
 
 The access_token and realmId are required for the tests to pass. These can be obtained through the [OAuth 2.0 authentication procedure](https://developer.intuit.com/docs/00_quickbooks_online/2_build/10_authentication_and_authorization). Once these tokens have been acquired, create a .env file from the [.env.example](.env.example) file and provide the tokens. These will be used to authenticate your requests.

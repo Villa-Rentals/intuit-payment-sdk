@@ -1,7 +1,7 @@
 'use strict'
 
 import { assert } from 'chai'
-import Intuit from '../lib/intuitPaymentSDK.js'
+import Intuit from '../lib/intuit-quickbook-payment'
 import '../env'
 
 describe('Given an instance of Library', () => {
