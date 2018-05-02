@@ -26,7 +26,7 @@ new Intuit({
 
 #### Making Requests
 
-See the [documentation](docs/index.html) for more information about the SDK.
+See the [documentation](https://villa-rentals.github.io/intuit-payment-sdk/) for more information about the SDK.
 
 ## Work in Progress
 
