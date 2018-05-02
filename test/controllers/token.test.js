@@ -33,7 +33,7 @@ describe('Given an instance of Token', () => {
         assert.isNotNull(data.value)
       })
       .catch((error) => {
-        console.log(error);
+        console.log(error)
         assert.isNull(error, 'Error should be null')
       })
   })
