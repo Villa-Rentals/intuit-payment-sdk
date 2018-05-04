@@ -68,7 +68,7 @@ export default class CreditCard extends Base {
    * @return {Promise} promise containing network response object
    */
   createFromToken (token, customerID) {
-    return this.request('POST', `/customers/${customerID}/cards`, {
+    return this.request('POST', `/customers/${customerID}/cards/createFromToken`, {
       value: token
     })
   }
