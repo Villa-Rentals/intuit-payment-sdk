@@ -1,6 +1,6 @@
 {
   "name": "intuit-quickbook-payment",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Unofficial SDK to access the Intuit Quickbook Payment API",
   "keywords": [
     "intuit",
