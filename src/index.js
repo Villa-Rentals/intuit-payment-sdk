@@ -48,7 +48,7 @@ export default class Intuit {
       },
       headers: {
         'Authorization': `Basic ${secret}`,
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/x-www-form-urlencoded'
       }
     })
   }
