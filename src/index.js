@@ -43,10 +43,7 @@ export default class Intuit {
     return axios({
       method: 'POST',
       url: 'https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer',
-      data: {
-        grant_type: 'refresh_token',
-        refresh_token: refreshToken
-      },
+      data: `grant_type=refresh_token&refresh_token=${refreshToken}`,
       headers: {
         'Authorization': `Basic ${auth.toString('base64')}`,
         'Content-Type': 'application/x-www-form-urlencoded'
