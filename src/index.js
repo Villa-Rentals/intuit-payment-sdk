@@ -38,7 +38,8 @@ export default class Intuit {
     })
   }
 
-  refreshAccessToken (secret, refreshToken) {
+  refreshAccessToken (secret, id, refreshToken) {
+    let auth = Buffer.from(`${id}:${secret}`)
     return axios({
       method: 'POST',
       url: 'https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer',
@@ -47,7 +48,7 @@ export default class Intuit {
         refresh_token: refreshToken
       },
       headers: {
-        'Authorization': `Basic ${secret}`,
+        'Authorization': `Basic ${auth.toString('base64')}`,
         'Content-Type': 'application/x-www-form-urlencoded'
       }
     })
